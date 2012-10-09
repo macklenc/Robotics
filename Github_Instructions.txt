@@ -1,1 +1,0 @@
-Please switch to your proper team branch, i.e. Payload, Structure, Navigation, and Control and add your name to the team file to prove that you have completed the "tutorial" and are thus ready to continue participating in the robotics team!
