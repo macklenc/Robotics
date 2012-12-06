@@ -61,20 +61,20 @@ class accelerometer : public base_sensor
 	const int FIFO_CTL;	//FIFO control
 	const int FIFO_STATUS;	//FIFO status, read only
 
-	std::vector<int> X_POLL_BUFFER;	//X-Axis buffer
-	std::vector<int> Y_POLL_BUFFER;	//Y-Axis buffer
-	std::vector<int> Z_POLL_BUFFER;	//Z-Axis buffer
+	std::vector<int> X_POLL_BUFFER;
+	std::vector<int> Y_POLL_BUFFER;
+	std::vector<int> Z_POLL_BUFFER;
 
-	int X_AVERAGED_DATA;	//Fried Chicken
-	int Y_AVERAGED_DATA;	//Pulled Pork
-	int Z_AVERAGED_DATA;	//Chicken Fried Steak
+	int X_AVERAGED_DATA;
+	int Y_AVERAGED_DATA;
+	int Z_AVERAGED_DATA;
 
-	void poll_data_word(unsigned char DEVICE_ADDR, unsigned char Reg_ADDR, int bytes){	//read multiple bytes
+	void poll_data_word(unsigned char DEVICE_ADDR, unsigned char Reg_ADDR, int bytes){
 		Read_Multi_Byte(DEVICE_ADDR,REG_ADDR,bytes);
 		word_transfer();
 	}
 
-	void set_all_poll_buffer_size(int size){	//Initializes Buffers
+	void set_all_poll_buffer_size(int size){
 		set_poll_buffer_size(size);
 		for (int i = 0; i < size; ++i)
 		{
@@ -85,7 +85,7 @@ class accelerometer : public base_sensor
 	}
 
 	public:
-		accelerometer(int size = 16, int ID){	//Initialize device
+		accelerometer(int size = 16, int ID){
 			DEVID = 0x00;
 			THRESH_TAP = 0x1D;
 			OFSX = 0x1E;
@@ -148,15 +148,12 @@ class accelerometer : public base_sensor
 			return 1;
 		}
 
-		void poll_coordinate_data(){	//Retrieve X,Y,Z data and add to buffers
-			for (int i = 0; i < BUFFER_SIZE; ++i)
-			{
-				poll_data_word(DEVICE_ADDR_READ, DATAX0, 6);
-				X_POLL_BUFFER.at(i)=((int)POLL_BUFFER.at(1)<<8)|(int)POLL_BUFFER.at(0);
-				Y_POLL_BUFFER.at(i)=((int)POLL_BUFFER.at(3)<<8)|(int)POLL_BUFFER.at(2);
-				Z_POLL_BUFFER.at(i)=((int)POLL_BUFFER.at(5)<<8)|(int)POLL_BUFFER.at(4);
-			}
-			
+		void poll_coordinate_data(){
+			poll_data_word(DEVICE_ADDR_READ, DATAX0, 6);
+			X_POLL_BUFFER.at(i)=((int)POLL_BUFFER.at(1)<<8)|(int)POLL_BUFFER.at(0);
+			Y_POLL_BUFFER.at(i)=((int)POLL_BUFFER.at(3)<<8)|(int)POLL_BUFFER.at(2);
+			Z_POLL_BUFFER.at(i)=((int)POLL_BUFFER.at(5)<<8)|(int)POLL_BUFFER.at(4);
+
 			average_filter();
 		}
 
@@ -178,7 +175,7 @@ class accelerometer : public base_sensor
 			return 1;
 		}
 
-		int test_sensor(){	//Forces sensor self test, and checks to see if values are within specs.
+		int test_sensor(){
 			int X_CORRECT = 0, Y_CORRECT = 0, Z_CORRECT = 0, X_INCORRECT = 0, Y_INCORRECT = 0, Z_INCORRECT = 0;
 			unsigned char CURRENT_DATA_FORMAT;
 			//Enter standby
@@ -261,13 +258,6 @@ class accelerometer : public base_sensor
 				}
 				
 			}
-
-			enter_standby_mode();
-			//Set self test bit
-			TEST_BIT = poll_data(DATA_FORMAT);
-			TEST_BIT &= 0x7F;
-			push_data(DATA_FORMAT,TEST_BIT);
-			enter_measurement_mode();
 
 			if (X_INCORRECT > 0 || Y_INCORRECT > 0 || Z_INCORRECT > 0)
 			{

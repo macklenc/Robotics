@@ -1,4 +1,4 @@
-#include "../include/i2c.h"
+#include "i2c.h"
 
 myI2C::myI2C(){
 	this->i2cOpen();
@@ -61,7 +61,7 @@ unsigned char myI2C::Read_I2C_Byte(unsigned char DEVICE_ADDR,unsigned char Reg_A
 	return I2C_RD_Buf[0];
 }
 
-unsigned char myI2C::Read_Multi_Byte(unsigned char DEVICE_ADDR, unsigned char Reg_ADDR){
+unsigned char myI2C::Read_I2C_Word(unsigned char DEVICE_ADDR,unsigned char Reg_ADDR){
 	I2C_WR_Buf[0] = Reg_ADDR;
 	
 	i2cSetAddress(DEVICE_ADDR);
@@ -69,7 +69,22 @@ unsigned char myI2C::Read_Multi_Byte(unsigned char DEVICE_ADDR, unsigned char Re
 		perror("Write Error");
 	}
 	i2cSetAddress(DEVICE_ADDR);	
-	if(read(g_i2cFile, I2C_RD_Buf, 7) !=7){
+	if(read(g_i2cFile, I2C_RD_Buf, 2) !=1){
+		perror("Read Error");
+	}
+	
+	return I2C_RD_Buf[0];
+}
+
+unsigned char myI2C::Read_Multi_Byte(unsigned char DEVICE_ADDR, unsigned char Reg_ADDR, int byte){
+	I2C_WR_Buf[0] = Reg_ADDR;
+	
+	i2cSetAddress(DEVICE_ADDR);
+	if(write(g_i2cFile, I2C_WR_Buf, 1) != 1) {
+		perror("Write Error");
+	}
+	i2cSetAddress(DEVICE_ADDR);	
+	if(read(g_i2cFile, I2C_RD_Buf, byte) !=7){
 		perror("Read Error");
 	}
 		
