@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "../include/i2c.h"
 #include <iostream>
 
