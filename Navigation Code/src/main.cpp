@@ -1,4 +1,4 @@
-#include "../include/i2c.h"
+#include "i2c.h"
 #include <iostream>
 
 // Define device address
@@ -21,7 +21,7 @@ int main(){
 	
 	value = i2cptr->Read_I2C_Byte(DEVICE_ADDR, STATUS_REG);							// Read single byte
 	
-	i2cptr->Read_Multi_Byte(DEVICE_ADDR, 0x80 | STATUS_REG); 			// Example read multiple data
+	i2cptr->Read_Multi_Byte(DEVICE_ADDR, 0x80 | STATUS_REG, 2); 			// Example read multiple data
 	// Output data will be stored in i2cptr->I2C_RD_Buf. Check i2c.cpp for more details
 	
 	return 0;
