@@ -1,12 +1,25 @@
+/*********************************************************************
+**********************************************************************
+**** File Name: accelerometer_ADXL345.h 							**
+**** Developer: Christopher Macklen						            **
+****                                                                **
+**** Revision : 1.0 - New model created                             **
+**** Model    : Universal Peripherial Communication - Accelerometer	**
+****                                                                **
+**** Queries  : Institute for Electrical and Electronics Engineers  **
+****            Webiste: http://www.uccs.edu/ieee/index.html        **
+****            Developer email: cmacklen@uccs.edu                  **
+**********************************************************************
+*********************************************************************/ 
 #include <string>
 #include <vector>
 #include <iostream>
-#include "base_sensor.h"
+#include "UPC_base.h"
 
-#ifndef accelerometer_H
-#define accelerometer_H
+#ifndef ADXL345_H
+#define ADXL345_H
 
-class accelerometer : public base_sensor
+class ADXL345 : public base_sensor
 {
 	/**
 		It is recommended to configure the device in 
@@ -85,7 +98,7 @@ class accelerometer : public base_sensor
 	}
 
 	public:
-		accelerometer(int size = 16, int ID){
+		ADXL345(int size = 16, int ID){
 			DEVID = 0x00;
 			THRESH_TAP = 0x1D;
 			OFSX = 0x1E;
@@ -261,7 +274,7 @@ class accelerometer : public base_sensor
 
 			if (X_INCORRECT > 0 || Y_INCORRECT > 0 || Z_INCORRECT > 0)
 			{
-				std::cerr << "The accelerometer has failed with " << X_INCORRECT + Y_INCORRECT + Z_INCORRECT << "failures.\n";
+				std::cerr << "The ADXL345 has failed with " << X_INCORRECT + Y_INCORRECT + Z_INCORRECT << "failures.\n";
 				return 2;
 			} else {
 				std::cerr << "All tests have passed.\n";
@@ -271,4 +284,4 @@ class accelerometer : public base_sensor
 };
 
 
-#endif // accelerometer_H
+#endif // ADXL345_H

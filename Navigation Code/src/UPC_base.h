@@ -1,11 +1,32 @@
+/*********************************************************************
+**********************************************************************
+**** File Name: UPC_base.h 											**
+**** Developer: Christopher Macklen						            **
+****                                                                **
+**** Revision : 1.0 - New model created                             **
+**** Model    : Universal Peripherial Communication Base Object		**
+****                                                                **
+**** Queries  : Institute for Electrical and Electronics Engineers  **
+****            Webiste: http://www.uccs.edu/ieee/index.html        **
+****            Developer email: cmacklen@uccs.edu                  **
+**********************************************************************
+*********************************************************************/ 
 #include <string>
 #include <vector>
+#include <exception>
 #include "i2c.h"
 
-#ifndef base_sensor_H
-#define base_sensor_H
+#ifndef UPC_base_H
+#define UPC_base_H
 
-class base_sensor : protected myI2C
+class UPC_exception_buffer_size: public exception
+{
+	virtual const char* what() const throw(){
+		return "Buffer size too large";
+	}
+}buffer_size;
+
+class UPC_base : protected myI2C
 {
 	private:
 		std::vector<int> POLL_BUFFER;	//Contains burst of sensor data
@@ -19,17 +40,38 @@ class base_sensor : protected myI2C
 
 		virtual int average_filter(){	//This is an averaging filter
 			AVERAGED_DATA = 0;
-			for (int i = 0; i < BUFFER_SIZE; ++i)
-			{
-				AVERAGED_DATA += POLL_BUFFER.at(i);
+			unsigned averaging = 0;
+			try{
+				for (int i = 0; i < BUFFER_SIZE; ++i)
+				{
+					averaging += POLL_BUFFER.at(i);
+				}
 			}
-			return AVERAGED_DATA /= BUFFER_SIZE;
+			catch(std::exception& e){
+				std::cerr << "Exception caught in UPC_base:\n";
+				std::cerr << e.what() << std::endl;
+			}
+			return AVERAGED_DATA = averaging / BUFFER_SIZE;
 		}
 
 		void set_poll_buffer_size(int size): BUFFER_SIZE(size){	//Sets buffer size, and initializes
-			for (int i = 0; i < size; ++i)
-			{
-				POLL_BUFFER.push_back(0);
+			try {
+				if (size > 32)
+				{
+					throw (buffer_size);
+				} else 
+				for (int i = 0; i < size; ++i)
+				{
+					POLL_BUFFER.push_back(0);
+				}
+			}
+			catch(buffer_size& e){
+				std::cerr << "Exception caught in UPC_base:\n";
+				std::cerr << e.what() << std::endl;
+			}
+			catch(std::exception& e){
+				std::cerr << "Exception caught in UPC_base:\n";
+				std::cerr << e.what() << std::endl;
 			}
 		}	//set data recording size
 
@@ -38,10 +80,16 @@ class base_sensor : protected myI2C
 		void set_peripherial_ADDR(unsigned char read, unsigned char write):DEVICE_ADDR_READ(read),DEVICE_ADDR_WRITE(write){}	//Set device address
 		
 		virtual unsigned char poll_data(unsigned char Reg_ADDR){	//Get data from I2C bus
-			for (int i = 0; i < BUFFER_SIZE; ++i)
-			{
-				POLL_BUFFER.at(i) = Read_I2C_Byte(DEVICE_ADDR_READ, Reg_ADDR);
+			try{
+				for (int i = 0; i < BUFFER_SIZE; ++i)
+				{
+					POLL_BUFFER.at(i) = Read_I2C_Byte(DEVICE_ADDR_READ, Reg_ADDR);
+				}	
 			}
+			catch(std::exception& e){
+				std::cerr << "Exception caught in UPC_base:\n";
+				std::cerr << e.what() << std::endl;
+			}			
 			
 			return average_filter();
 		}//easter egg! Fred, I am not you're father
@@ -67,9 +115,9 @@ class base_sensor : protected myI2C
 
 		virtual int test_sensor() = 0;
 
-		base_sensor(){	//Constructor, not used, DAMMIT JIM!
+		UPC_base(){	//Constructor, not used, DAMMIT JIM!
 		}
-		~base_sensor();
+		~UPC_base();
 	public:
 		std::vector<int> get_data(){//Get data from data structure
 			return POLL_BUFFER;
@@ -84,4 +132,4 @@ class base_sensor : protected myI2C
 };//HE'S DEAD JIM!
 
 
-#endif // base_sensor_H
+#endif // UPC_base_H
