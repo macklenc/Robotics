@@ -5,6 +5,9 @@
 #include <cstdlib>
 #include <cstdio>
 
+#ifndef myI2C_H
+#define myI2C_H
+
 #define MAX_BUFFER_SIZE					16
 
 class myI2C {
@@ -33,3 +36,4 @@ public:
 	// Read the output from i2cptr->I2C_RD_Buf
 	unsigned char Read_Multi_Byte(unsigned char DEVICE_ADDR, unsigned char Reg_ADDR, int byte);
 };
+#endif // myI2C_H

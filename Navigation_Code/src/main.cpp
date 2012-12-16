@@ -1,4 +1,5 @@
-#include "../include/i2c.h"
+#include "i2c.h"
+#include "UPC_base.h"
 #include <iostream>
 
 // Define device address
