@@ -19,7 +19,7 @@
 #ifndef ADXL345_H
 #define ADXL345_H
 
-class ADXL345 : public base_sensor
+class ADXL345 : public UPC_base
 {
 	/**
 		It is recommended to configure the device in 
@@ -33,46 +33,46 @@ class ADXL345 : public base_sensor
 		Write address 0x3A, Read address 0x3B
 	**/
 
-	const int DEVID;	//Device ID, read only
+	int DEVID;	//Device ID, read only
 
 	//Tap control
-	const int THRESH_TAP;	//tap threshold
-	const int OFSX;	//X-axis offset
-	const int OFSY;	//Y-axis offset
-	const int OFSZ;	//Z-axis offset
-	const int DUR;	//Tap duration
-	const int Latent;	//Tap latency
-	const int Window;	//Tap window
-	const int TAP_AXES;	//Axis control for tap/double tap
-	const int ACT_TAP_STATUS;	//Source of tap/double tap
+	int THRESH_TAP;	//tap threshold
+	int OFSX;	//X-axis offset
+	int OFSY;	//Y-axis offset
+	int OFSZ;	//Z-axis offset
+	int DUR;	//Tap duration
+	int Latent;	//Tap latency
+	int Window;	//Tap window
+	int TAP_AXES;	//Axis control for tap/double tap
+	int ACT_TAP_STATUS;	//Source of tap/double tap
 
 	//Power options
-	const int THRESH_ACT;	//Activity threshold
-	const int THRESH_INACT;	//Inactivity threshold
-	const int TIME_INACT;	//Inactivity time
-	const int ACT_INACT_CTL;	//Axis enable control for activity and inactivity detection, read only
-	const int BW_RATE;	//Data rate and power mode control
-	const int POWER_CTL	//Power-saving features control
+	int THRESH_ACT;	//Activity threshold
+	int THRESH_INACT;	//Inactivity threshold
+	int TIME_INACT;	//Inactivity time
+	int ACT_INACT_CTL;	//Axis enable control for activity and inactivity detection, read only
+	int BW_RATE;	//Data rate and power mode control
+	int POWER_CTL;	//Power-saving features control
 
 	//Free Fall control
-	const int THRESH_FF;	//Free-fall threshold
-	const int TIME_FF;	//Free-fall time
+	int THRESH_FF;	//Free-fall threshold
+	int TIME_FF;	//Free-fall time
 	
 	//Interrupt control
-	const int INT_ENABLE;	//Interrupt enable control
-	const int INT_MAP;	//Interrupt mapping control
-	const int INT_SOURCE;	//Source of interrupts, read only
+	int INT_ENABLE;	//Interrupt enable control
+	int INT_MAP;	//Interrupt mapping control
+	int INT_SOURCE;	//Source of interrupts, read only
 
 	//Data
-	const int DATA_FORMAT;	//Data format control
-	const int DATAX0;	//X-Axis Data 0, read only
-	const int DATAX1;	//X-Axis Data 1, read only
-	const int DATAY0;	//Y-Axis Data 0, read only
-	const int DATAY1;	//Y-Axis Data 1, read only
-	const int DATAZ0;	//Z-Axis Data 0, read only
-	const int DATAZ1;	//Z-Axis Data 1, read only
-	const int FIFO_CTL;	//FIFO control
-	const int FIFO_STATUS;	//FIFO status, read only
+	int DATA_FORMAT;	//Data format control
+	int DATAX0;	//X-Axis Data 0, read only
+	int DATAX1;	//X-Axis Data 1, read only
+	int DATAY0;	//Y-Axis Data 0, read only
+	int DATAY1;	//Y-Axis Data 1, read only
+	int DATAZ0;	//Z-Axis Data 0, read only
+	int DATAZ1;	//Z-Axis Data 1, read only
+	int FIFO_CTL;	//FIFO control
+	int FIFO_STATUS;	//FIFO status, read only
 
 	std::vector<int> X_POLL_BUFFER;
 	std::vector<int> Y_POLL_BUFFER;
@@ -98,7 +98,7 @@ class ADXL345 : public base_sensor
 	}
 
 	public:
-		ADXL345(int size = 16, int ID){
+		ADXL345(int size = 16, int ID = 0x00){
 			DEVID = 0x00;
 			THRESH_TAP = 0x1D;
 			OFSX = 0x1E;
@@ -163,9 +163,9 @@ class ADXL345 : public base_sensor
 
 		void poll_coordinate_data(){
 			poll_data_word(DEVICE_ADDR_READ, DATAX0, 6);
-			X_POLL_BUFFER.at(i)=((int)POLL_BUFFER.at(1)<<8)|(int)POLL_BUFFER.at(0);
-			Y_POLL_BUFFER.at(i)=((int)POLL_BUFFER.at(3)<<8)|(int)POLL_BUFFER.at(2);
-			Z_POLL_BUFFER.at(i)=((int)POLL_BUFFER.at(5)<<8)|(int)POLL_BUFFER.at(4);
+			X_POLL_BUFFER.at(0)=((int)POLL_BUFFER.at(1)<<8)|(int)POLL_BUFFER.at(0);
+			Y_POLL_BUFFER.at(0)=((int)POLL_BUFFER.at(3)<<8)|(int)POLL_BUFFER.at(2);
+			Z_POLL_BUFFER.at(0)=((int)POLL_BUFFER.at(5)<<8)|(int)POLL_BUFFER.at(4);
 
 			average_filter();
 		}
@@ -194,8 +194,7 @@ class ADXL345 : public base_sensor
 			//Enter standby
 			enter_standby_mode();
 			//Set self test bit
-			unsigned char TEST_BIT, DATA;
-			signed int16_t SIGNED_DATA;
+			unsigned char TEST_BIT;
 			TEST_BIT = poll_data(DATA_FORMAT);
 			TEST_BIT |= 0x80;
 			push_data(DATA_FORMAT,TEST_BIT);

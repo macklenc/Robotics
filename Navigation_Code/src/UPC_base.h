@@ -60,14 +60,13 @@ class UPC_exception_byte_size: public std::exception
 
 class UPC_base : protected myI2C
 {
-	private:
+		
+	protected:
 		std::vector<int> POLL_BUFFER;	//Contains burst of sensor data
 		int SENSOR_ID, BUFFER_SIZE;	//Sensor ID: used for identification, Buffer thing: Determines size of data blurb
 		unsigned char DEVICE_ADDR_WRITE, DEVICE_ADDR_READ, REG_ADDR, DATA_OUT, AVERAGED_DATA;
 		//In order: Write address, read address, register address, output history, smoothed data
 
-		
-	protected:
 		void set_peripherial_REG_ADDR(unsigned char addr){ REG_ADDR = addr; }	//Set device register address
 
 		virtual int average_filter(){	//This is an averaging filter

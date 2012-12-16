@@ -13,16 +13,16 @@
 *********************************************************************/ 
 #include <string>
 #include <vector>
-#include "base_sensor.h"
+#include "UPC_base.h"
 
 #ifndef compass_H
 #define compass_H
 
-class compass : protected base_sensor
+class compass : protected UPC_base
 {
 	public:
-		compass(int size = 16, int ID){
-			set_all_poll_buffer_size(size);
+		compass(int size = 16, int ID = 0x01){
+			set_poll_buffer_size(size);
 			set_peripherial_ID(ID);
 			set_peripherial_ADDR(0x43,0x42);
 			initialize_sensor();
