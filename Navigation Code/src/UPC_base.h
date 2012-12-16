@@ -25,6 +25,12 @@ class UPC_exception_buffer_size: public exception
 		return "Buffer size too large";
 	}
 }buffer_size;
+class UPC_exception_byte_size: public exception
+{
+	virtual const char* what() const throw(){
+		return "Cannot accept negative number";
+	}
+}byte_size;
 
 class UPC_base : protected myI2C
 {
@@ -95,19 +101,46 @@ class UPC_base : protected myI2C
 		}//easter egg! Fred, I am not you're father
 
 		virtual void poll_data_word(unsigned char DEVICE_ADDR, unsigned char Reg_ADDR, int bytes){
-			Read_Multi_Byte(DEVICE_ADDR,REG_ADDR,bytes);
-			word_transfer();
+			try{
+				if (bytes < 0)
+				{
+					throw(byte_size);
+				}
+				Read_Multi_Byte(DEVICE_ADDR,REG_ADDR,bytes);
+				word_transfer();
+			}
+			catch(byte_size& e){
+				std::cerr << "Exception caught in UPC_base:\n";
+				std::cerr << e.what() << std::endl;
+			}
+			catch(std::exception& e){
+				std::cerr << "Exception caught in UPC_base:\n";
+				std::cerr << e.what() << std::endl;
+			}
 		}
 		
 		virtual int push_data(unsigned char Reg_ADDR, unsigned char dataOut){	//Send data through I2C bus
-			DATA_OUT = Data;
-			Send_I2C_Byte(unsigned char DEVICE_ADDR, unsigned char Reg_ADDR, unsigned char Data);
+			try{
+				Data = dataOut;
+				DATA_OUT = Data;
+				Send_I2C_Byte(unsigned char DEVICE_ADDR, unsigned char Reg_ADDR, unsigned char Data);
+			}
+			catch(std::exception& e){
+				std::cerr << "Exception caught in UPC_base:\n";
+				std::cerr << e.what() << std::endl;
+			}
 		}
 
 		virtual int word_transfer(){	//Copies I2C read buffer for use with words
-			for (int i = 0; i < BUFFER_SIZE; ++i)
-			{
-				POLL_BUFFER.at(i) = I2C_RD_Buf[i];
+			try{
+				for (int i = 0; i < BUFFER_SIZE; ++i)
+				{
+					POLL_BUFFER.at(i) = I2C_RD_Buf[i];
+				}
+			}
+			catch(std::exception& e){
+				std::cerr << "Exception caught in UPC_base:\n";
+				std::cerr << e.what() << std::endl;
 			}
 		}
 
