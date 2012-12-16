@@ -1,5 +1,7 @@
 #include "i2c.h"
 #include "UPC_base.h"
+#include "accelerometer_ADXL345.h"
+#include "compass_HMC6352.h"
 #include <iostream>
 
 // Define device address

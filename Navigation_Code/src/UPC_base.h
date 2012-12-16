@@ -1,7 +1,7 @@
 /*********************************************************************
 **********************************************************************
-**** File Name: UPC_base.h     					    **
-**** Developer: Christopher Macklen				    **
+**** File Name: UPC_base.h     					    				**
+**** Developer: Christopher Macklen				    				**
 ****                                                                **
 **** Revision : 1.0 - New model created                             **
 **** Model    : Universal Peripherial Communication Base Object	    **
@@ -10,7 +10,31 @@
 ****            Webiste: http://www.uccs.edu/ieee/index.html        **
 ****            Developer email: cmacklen@uccs.edu                  **
 **********************************************************************
-*********************************************************************/ 
+****************************Function List*****************************
+void set_peripherial_REG_ADDR(unsigned char addr);						//Set device register address
+virtual int average_filter();											//This is an averaging filter
+void set_poll_buffer_size(int size);									//Sets buffer size, and initializes
+void set_peripherial_ID(int ID);										//Set the device identification number
+void set_peripherial_ADDR(unsigned char read, unsigned char write);		//Set device address
+virtual unsigned char poll_data(unsigned char Reg_ADDR);				//Get data from I2C bus
+virtual void poll_data_word(unsigned char Reg_ADDR, int bytes);
+virtual int push_data(unsigned char Reg_ADDR, unsigned char dataOut);	//Send data through I2C bus
+virtual int word_transfer();											//Copies I2C read buffer for use with words
+virtual int initialize_sensor() = 0;
+virtual int test_sensor() = 0;
+UPC_base();																//Constructor, not used, DAMMIT JIM!
+~UPC_base();
+std::vector<int> get_data();											//Get data from data structure
+int get_poll_buffer_size();												//Dumb comment #1
+int get_peripherial_ID();
+unsigned char get_peripherial_ADDR_READ();
+unsigned char get_peripherial_ADDR_WRITE();
+unsigned char get_peripherial_REG_ADDR();
+unsigned char get_transmit_data();
+unsigned char get_average_data();										//If you think a comment will help you here... You're wrong :P
+**********************************************************************
+*********************************************************************/
+
 #include <string>
 #include <vector>
 #include <exception>
