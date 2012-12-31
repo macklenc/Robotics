@@ -16673,7 +16673,7 @@ Based on the following sources:
 <junction x="7.62" y="111.76"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="CLK-1" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="Q1" gate="G$1" pin="1"/>
@@ -16685,7 +16685,7 @@ Based on the following sources:
 <junction x="73.66" y="147.32"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="CLK-2" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="Q1" gate="G$1" pin="2"/>
@@ -16697,7 +16697,7 @@ Based on the following sources:
 <junction x="73.66" y="144.78"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="LEDNET-1" class="0">
 <segment>
 <pinref part="AT328" gate="G$1" pin="19"/>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -16706,7 +16706,7 @@ Based on the following sources:
 <junction x="106.68" y="144.78"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="LEDNET-2" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
@@ -16715,7 +16715,7 @@ Based on the following sources:
 <junction x="106.68" y="154.94"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="RST-SW" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="S1" gate="1" pin="P1"/>
@@ -16752,7 +16752,7 @@ Based on the following sources:
 <junction x="73.66" y="167.64"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="TX-RX" class="0">
 <segment>
 <pinref part="PGM" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="101.6" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
@@ -16763,7 +16763,7 @@ Based on the following sources:
 <junction x="73.66" y="165.1"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="RX-TX" class="0">
 <segment>
 <pinref part="PGM" gate="G$1" pin="3"/>
 <wire x1="33.02" y1="104.14" x2="55.88" y2="104.14" width="0.1524" layer="91"/>
@@ -16837,7 +16837,7 @@ Based on the following sources:
 <junction x="106.68" y="129.54"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="SDA-5V" class="0">
 <segment>
 <pinref part="AT328" gate="G$1" pin="27"/>
 <wire x1="93.98" y1="119.38" x2="93.98" y2="165.1" width="0.1524" layer="91"/>

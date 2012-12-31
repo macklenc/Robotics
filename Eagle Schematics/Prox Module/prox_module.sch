@@ -16400,8 +16400,9 @@ Based on the following sources:
 <sheets>
 <sheet>
 <plain>
-<text x="160.02" y="33.02" size="2.54" layer="94" font="vector" align="center">DEVELOPER:</text>
-<text x="193.04" y="33.02" size="2.54" layer="94" font="vector" align="center">Christopher Macklen</text>
+<text x="190.5" y="33.02" size="2.54" layer="94" font="vector" align="center">Christopher Macklen</text>
+<text x="241.3" y="7.62" size="2.54" layer="94" font="vector" align="center">1.0</text>
+<text x="157.48" y="33.02" size="2.54" layer="94" font="vector" align="center">Engineer:</text>
 </plain>
 <instances>
 <instance part="AT328" gate="G$1" x="81.28" y="152.4"/>
@@ -16614,6 +16615,8 @@ Based on the following sources:
 <junction x="198.12" y="58.42"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <junction x="129.54" y="170.18"/>
+<junction x="210.82" y="177.8"/>
+<junction x="228.6" y="177.8"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -16635,7 +16638,6 @@ Based on the following sources:
 <junction x="73.66" y="88.9"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="81.28" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
-<junction x="73.66" y="81.28"/>
 <junction x="30.48" y="81.28"/>
 <wire x1="35.56" y1="81.28" x2="73.66" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="88.9" x2="35.56" y2="88.9" width="0.1524" layer="91"/>
@@ -17267,7 +17269,6 @@ Based on the following sources:
 <wire x1="35.56" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
 <junction x="43.18" y="60.96"/>
 <junction x="43.18" y="45.72"/>
-<junction x="43.18" y="30.48"/>
 <junction x="35.56" y="60.96"/>
 <junction x="35.56" y="45.72"/>
 <junction x="35.56" y="30.48"/>

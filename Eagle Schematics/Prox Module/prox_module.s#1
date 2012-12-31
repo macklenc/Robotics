@@ -16360,7 +16360,6 @@ Based on the following sources:
 <part name="S1" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0204/7" value="10KOHM"/>
 <part name="C3" library="rcl" deviceset="CPOL-US" device="085CS-1AR" value="100uF"/>
-<part name="C4" library="rcl" deviceset="CPOL-US" device="085CS-1AR" value="0.1uF"/>
 <part name="C5" library="rcl" deviceset="C-US" device="025-024X044" value="0.1uF"/>
 <part name="PGM" library="con-lstb" deviceset="MA03-1" device=""/>
 <part name="T1" library="transistor" deviceset="*-NPN-" device="TO92-E1"/>
@@ -16396,6 +16395,7 @@ Based on the following sources:
 <part name="R15" library="rcl" deviceset="R-US_" device="0204/7" value="10KOHM"/>
 <part name="C13" library="rcl" deviceset="C-US" device="025-024X044" value="0.1uF"/>
 <part name="IC2" library="74xx-us" deviceset="74*14" device="N" technology="LS"/>
+<part name="C4" library="rcl" deviceset="C-US" device="025-024X044" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -16414,7 +16414,6 @@ Based on the following sources:
 <instance part="S1" gate="1" x="152.4" y="175.26" rot="R180"/>
 <instance part="R2" gate="G$1" x="139.7" y="180.34" rot="R180"/>
 <instance part="C3" gate="G$1" x="116.84" y="175.26"/>
-<instance part="C4" gate="G$1" x="129.54" y="175.26"/>
 <instance part="C5" gate="G$1" x="43.18" y="160.02"/>
 <instance part="PGM" gate="G$1" x="25.4" y="101.6"/>
 <instance part="T1" gate="G$1" x="78.74" y="99.06" rot="R180"/>
@@ -16457,6 +16456,7 @@ Based on the following sources:
 <instance part="IC1" gate="F" x="177.8" y="71.12" rot="R90"/>
 <instance part="IC2" gate="A" x="147.32" y="71.12" rot="R90"/>
 <instance part="IC2" gate="B" x="116.84" y="71.12" rot="R90"/>
+<instance part="C4" gate="G$1" x="129.54" y="175.26"/>
 </instances>
 <busses>
 </busses>
@@ -16527,8 +16527,6 @@ Based on the following sources:
 <junction x="106.68" y="177.8"/>
 <pinref part="C3" gate="G$1" pin="-"/>
 <junction x="116.84" y="170.18"/>
-<pinref part="C4" gate="G$1" pin="-"/>
-<junction x="129.54" y="170.18"/>
 <wire x1="10.16" y1="129.54" x2="40.64" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="129.54" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
 <junction x="10.16" y="129.54"/>
@@ -16614,6 +16612,10 @@ Based on the following sources:
 <wire x1="198.12" y1="144.78" x2="198.12" y2="58.42" width="0.1524" layer="91"/>
 <junction x="198.12" y="144.78"/>
 <junction x="198.12" y="58.42"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<junction x="129.54" y="170.18"/>
+<junction x="210.82" y="177.8"/>
+<junction x="228.6" y="177.8"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -16635,7 +16637,6 @@ Based on the following sources:
 <junction x="73.66" y="88.9"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="81.28" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
-<junction x="73.66" y="81.28"/>
 <junction x="30.48" y="81.28"/>
 <wire x1="35.56" y1="81.28" x2="73.66" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="88.9" x2="35.56" y2="88.9" width="0.1524" layer="91"/>
@@ -17241,10 +17242,8 @@ Based on the following sources:
 <wire x1="116.84" y1="177.8" x2="116.84" y2="180.34" width="0.1524" layer="91"/>
 <junction x="116.84" y="180.34"/>
 <pinref part="C3" gate="G$1" pin="+"/>
-<pinref part="C4" gate="G$1" pin="+"/>
 <wire x1="129.54" y1="180.34" x2="129.54" y2="177.8" width="0.1524" layer="91"/>
 <junction x="129.54" y="180.34"/>
-<junction x="129.54" y="177.8"/>
 <junction x="116.84" y="177.8"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="12.7" y1="116.84" x2="20.32" y2="116.84" width="0.1524" layer="91"/>
@@ -17269,7 +17268,6 @@ Based on the following sources:
 <wire x1="35.56" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
 <junction x="43.18" y="60.96"/>
 <junction x="43.18" y="45.72"/>
-<junction x="43.18" y="30.48"/>
 <junction x="35.56" y="60.96"/>
 <junction x="35.56" y="45.72"/>
 <junction x="35.56" y="30.48"/>
@@ -17297,6 +17295,8 @@ Based on the following sources:
 <wire x1="195.58" y1="55.88" x2="195.58" y2="147.32" width="0.1524" layer="91"/>
 <junction x="195.58" y="147.32"/>
 <junction x="195.58" y="55.88"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<junction x="129.54" y="177.8"/>
 </segment>
 </net>
 </nets>
