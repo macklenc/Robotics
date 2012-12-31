@@ -1,0 +1,55 @@
+Partlist
+
+Exported from prox_module.sch at 12/31/2012 10:18:01 AM
+
+EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
+
+Assembly variant: 
+
+Part     Value          Device           Package      Library      Sheet
+
+AT328                   DIL28            DIL28-6      ic-package   1
+BUMPERS                 MA08-2           MA08-2       con-lstb     1
+C1       22PF           C-US025-024X044  C025-024X044 rcl          1
+C2       22PF           C-US025-024X044  C025-024X044 rcl          1
+C3       100uF          CPOL-US085CS-1AR 085CS_1AR    rcl          1
+C4       0.1uF          C-US025-024X044  C025-024X044 rcl          1
+C5       0.1uF          C-US025-024X044  C025-024X044 rcl          1
+C6       0.1uF          C-US025-024X044  C025-024X044 rcl          1
+C7       0.1uF          C-US025-024X044  C025-024X044 rcl          1
+C8       0.1uF          C-US025-024X044  C025-024X044 rcl          1
+C9       0.1uF          C-US025-024X044  C025-024X044 rcl          1
+C10      0.1uF          C-US025-024X044  C025-024X044 rcl          1
+C11      0.1uF          C-US025-024X044  C025-024X044 rcl          1
+C12      0.1uF          C-US025-024X044  C025-024X044 rcl          1
+C13      0.1uF          C-US025-024X044  C025-024X044 rcl          1
+IC1      74LS14N        74LS14N          DIL14        74xx-us      1
+IC2      74LS14N        74LS14N          DIL14        74xx-us      1
+LED1                    LED3MM           LED3MM       led          1
+PGM                     MA03-1           MA03-1       con-lstb     1
+Q1       16MHZ          XTAL/S           QS           special      1
+R1       220OHM         R-US_0204/7      0204/7       rcl          1
+R2       10KOHM         R-US_0204/7      0204/7       rcl          1
+R3       10KOHM         R-US_0204/7      0204/7       rcl          1
+R4       10KOHM         R-US_0204/7      0204/7       rcl          1
+R5       10KOHM         R-US_0204/7      0204/7       rcl          1
+R6       10KOHM         R-US_0204/7      0204/7       rcl          1
+R7       10KOHM         R-US_0204/7      0204/7       rcl          1
+R8       10KOHM         R-US_0204/7      0204/7       rcl          1
+R9       10KOHM         R-US_0204/7      0204/7       rcl          1
+R10      10KOHM         R-US_0204/7      0204/7       rcl          1
+R11      10KOHM         R-US_0204/7      0204/7       rcl          1
+R12      10KOHM         R-US_0204/7      0204/7       rcl          1
+R13      10KOHM         R-US_0204/7      0204/7       rcl          1
+R14      10KOHM         R-US_0204/7      0204/7       rcl          1
+R15      10KOHM         R-US_0204/7      0204/7       rcl          1
+S1                      10-XX            B3F-10XX     switch-omron 1
+S2                      SD4-01           SD4-01       switch-dil   1
+T1                      -NPN-TO92-E1     TO92-E1      transistor   1
+T2                      -NPN-TO92-E1     TO92-E1      transistor   1
+T3                      -NPN-TO92-E1     TO92-E1      transistor   1
+T4                      -NPN-TO92-E1     TO92-E1      transistor   1
+UPCB                    MA03-2           MA03-2       con-lstb     1
+US1                     MA03-1           MA03-1       con-lstb     1
+US2                     MA03-1           MA03-1       con-lstb     1
+US3                     MA03-1           MA03-1       con-lstb     1

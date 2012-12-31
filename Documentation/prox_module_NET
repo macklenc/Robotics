@@ -1,12 +1,13 @@
 Netlist
 
-Exported from prox_module.sch at 12/30/2012 9:37:30 PM
+Exported from prox_module.sch at 12/31/2012 10:17:48 AM
 
 EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
 
 Net      Part     Pad      Pin        Sheet
 
-3V       R4       2        2          1
+3V       R3       1        1          1
+         R4       2        2          1
          R7       2        2          1
          UPCB     2        2          1
 
@@ -140,9 +141,6 @@ I2C-EN   R3       2        2          1
          T2       2        B          1
          T3       2        B          1
          T4       2        B          1
-
-I2C-EN-1 AT328    18       18         1
-         R3       1        1          1
 
 LEDNET-1 AT328    19       19         1
          R1       1        1          1

@@ -16401,7 +16401,7 @@ Based on the following sources:
 <sheet>
 <plain>
 <text x="190.5" y="33.02" size="2.54" layer="94" font="vector" align="center">Christopher Macklen</text>
-<text x="241.3" y="7.62" size="2.54" layer="94" font="vector" align="center">1.0</text>
+<text x="241.3" y="7.62" size="2.54" layer="94" font="vector" align="center">1.1</text>
 <text x="157.48" y="33.02" size="2.54" layer="94" font="vector" align="center">Engineer:</text>
 </plain>
 <instances>
@@ -16419,7 +16419,7 @@ Based on the following sources:
 <instance part="PGM" gate="G$1" x="25.4" y="101.6"/>
 <instance part="T1" gate="G$1" x="78.74" y="99.06" rot="R180"/>
 <instance part="T2" gate="G$1" x="68.58" y="99.06"/>
-<instance part="R3" gate="G$1" x="106.68" y="124.46" rot="R270"/>
+<instance part="R3" gate="G$1" x="111.76" y="93.98" rot="R90"/>
 <instance part="R4" gate="G$1" x="25.4" y="81.28" rot="R180"/>
 <instance part="R5" gate="G$1" x="25.4" y="116.84" rot="R180"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -16469,7 +16469,8 @@ Based on the following sources:
 <pinref part="UPCB" gate="1" pin="2"/>
 <junction x="12.7" y="93.98"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="81.28" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="81.28" x2="12.7" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="76.2" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="73.66" x2="12.7" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="81.28" x2="12.7" y2="81.28" width="0.1524" layer="91"/>
 <junction x="12.7" y="81.28"/>
@@ -16478,6 +16479,10 @@ Based on the following sources:
 <wire x1="20.32" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
 <junction x="20.32" y="73.66"/>
 <junction x="12.7" y="73.66"/>
+<wire x1="12.7" y1="76.2" x2="111.76" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="76.2" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<junction x="111.76" y="88.9"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -16808,9 +16813,8 @@ Based on the following sources:
 <wire x1="83.82" y1="99.06" x2="81.28" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="111.76" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="111.76" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="111.76" x2="106.68" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="111.76" x2="111.76" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="T3" gate="G$1" pin="B"/>
-<wire x1="106.68" y1="111.76" x2="111.76" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="111.76" x2="111.76" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="99.06" x2="109.22" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="T4" gate="G$1" pin="B"/>
@@ -16819,24 +16823,12 @@ Based on the following sources:
 <wire x1="83.82" y1="111.76" x2="91.44" y2="111.76" width="0.1524" layer="91"/>
 <junction x="83.82" y="111.76"/>
 <junction x="91.44" y="111.76"/>
-<junction x="106.68" y="111.76"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="111.76" x2="106.68" y2="119.38" width="0.1524" layer="91"/>
-<junction x="106.68" y="119.38"/>
 <junction x="66.04" y="99.06"/>
 <junction x="81.28" y="99.06"/>
 <junction x="93.98" y="99.06"/>
 <junction x="109.22" y="99.06"/>
-</segment>
-</net>
-<net name="I2C-EN-1" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="129.54" x2="106.68" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="AT328" gate="G$1" pin="18"/>
-<wire x1="106.68" y1="142.24" x2="88.9" y2="142.24" width="0.1524" layer="91"/>
-<junction x="88.9" y="142.24"/>
-<junction x="106.68" y="129.54"/>
+<junction x="111.76" y="99.06"/>
 </segment>
 </net>
 <net name="SDA-5V" class="0">
