@@ -1,12 +1,12 @@
 Pinlist
 
-Exported from prox_module.sch at 12/31/2012 5:12:00 PM
+Exported from prox_module.sch at 12/31/2012 7:55:44 PM
 
 EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
 
 Part     Pad      Pin        Dir      Net
 
-AT328    1        1          pas      RST-2
+ATMEGA   1        1          pas      RST-2
          2        2          pas      TX-RX
          3        3          pas      RX-TX
          4        4          pas      US3DATA
@@ -98,6 +98,12 @@ C12      1        1          pas      BMP-DBNCE7
 C13      1        1          pas      BMP-DBNCE8
          2        2          pas      GND
 
+C14      +        +          pas      3V
+         -        -          pas      GND
+
+C15      1        1          pas      3V
+         2        2          pas      GND
+
 IC1      1        I          in       BMP-DBNCE4
          2        O          out      BMP-OUT4
          3        I          in       BMP-DBNCE5
@@ -111,7 +117,7 @@ IC1      1        I          in       BMP-DBNCE4
          11       I          in       BMP-DBNCE2
          12       O          out      BMP-OUT1
          13       I          in       BMP-DBNCE1
-         14       VCC        pwr      VCC
+         14       VCC        pwr      5V
 
 IC2      1        I          in                ***   unused    ***
          2        O          out               ***   unused    ***
@@ -126,7 +132,7 @@ IC2      1        I          in                ***   unused    ***
          11       I          in       BMP-DBNCE8
          12       O          out      BMP-OUT6
          13       I          in       BMP-DBNCE7
-         14       VCC        pwr      VCC
+         14       VCC        pwr      5V
 
 LED1     A        A          pas      LEDNET-2
          K        C          pas      GND

@@ -1,21 +1,25 @@
 Netlist
 
-Exported from prox_module.sch at 12/31/2012 5:11:37 PM
+Exported from prox_module.sch at 12/31/2012 7:55:24 PM
 
 EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
 
 Net      Part     Pad      Pin        Sheet
 
-3V       R3       1        1          1
+3V       C14      +        +          1
+         C15      1        1          1
+         R3       1        1          1
          R4       2        2          1
          R7       2        2          1
          UPCB     4        S          1
 
-5V       AT328    20       20         1
-         AT328    21       21         1
-         AT328    7        7          1
+5V       ATMEGA   20       20         1
+         ATMEGA   21       21         1
+         ATMEGA   7        7          1
          C3       +        +          1
          C4       1        1          1
+         IC1      14       VCC        1
+         IC2      14       VCC        1
          PGM      5        S          1
          R10      1        1          1
          R11      1        1          1
@@ -74,40 +78,40 @@ BMP-DBNCE8 B8       2        S          1
          IC2      11       I          1
          R15      2        2          1
 
-BMP-OUT1 AT328    11       11         1
+BMP-OUT1 ATMEGA   11       11         1
          IC1      12       O          1
 
-BMP-OUT2 AT328    12       12         1
+BMP-OUT2 ATMEGA   12       12         1
          IC1      10       O          1
 
-BMP-OUT3 AT328    13       13         1
+BMP-OUT3 ATMEGA   13       13         1
          IC1      8        O          1
 
-BMP-OUT4 AT328    14       14         1
+BMP-OUT4 ATMEGA   14       14         1
          IC1      2        O          1
 
-BMP-OUT5 AT328    15       15         1
+BMP-OUT5 ATMEGA   15       15         1
          IC2      10       O          1
 
-BMP-OUT6 AT328    16       16         1
+BMP-OUT6 ATMEGA   16       16         1
          IC2      12       O          1
 
-BMP-OUT7 AT328    17       17         1
+BMP-OUT7 ATMEGA   17       17         1
          IC1      6        O          1
 
-BMP-OUT8 AT328    23       23         1
+BMP-OUT8 ATMEGA   23       23         1
          IC1      4        O          1
 
-CLK-1    AT328    9        9          1
+CLK-1    ATMEGA   9        9          1
          C1       2        2          1
          Q1       1        1          1
 
-CLK-2    AT328    10       10         1
+CLK-2    ATMEGA   10       10         1
          C2       2        2          1
          Q1       2        2          1
 
-GND      AT328    22       22         1
-         AT328    8        8          1
+GND      ATMEGA   22       22         1
+         ATMEGA   8        8          1
          B1       1        S          1
          B2       1        S          1
          B3       1        S          1
@@ -121,6 +125,8 @@ GND      AT328    22       22         1
          C11      2        2          1
          C12      2        2          1
          C13      2        2          1
+         C14      -        -          1
+         C15      2        2          1
          C2       1        1          1
          C3       -        -          1
          C4       2        2          1
@@ -128,8 +134,8 @@ GND      AT328    22       22         1
          C7       2        2          1
          C8       2        2          1
          C9       2        2          1
-         IC1      7        GND        * none *
-         IC2      7        GND        * none *
+         IC1      7        GND        1
+         IC2      7        GND        1
          LED1     K        C          1
          PGM      4        S          1
          S1       1        S          1
@@ -145,7 +151,7 @@ I2C-EN   R3       2        2          1
          T3       2        B          1
          T4       2        B          1
 
-LEDNET-1 AT328    19       19         1
+LEDNET-1 ATMEGA   19       19         1
          R1       1        1          1
 
 LEDNET-2 LED1     A        A          1
@@ -155,14 +161,14 @@ RST-1    C5       2        2          1
          PGM      1        S          1
          R16      1        1          1
 
-RST-2    AT328    1        1          1
+RST-2    ATMEGA   1        1          1
          C5       1        1          1
 
 RST-SW   R2       1        1          1
          S1       3        P          1
          S1       4        P1         1
 
-RX-TX    AT328    3        3          1
+RX-TX    ATMEGA   3        3          1
          PGM      3        S          1
 
 SCL      R4       1        1          1
@@ -170,7 +176,7 @@ SCL      R4       1        1          1
          T2       3        E          1
          UPCB     5        S          1
 
-SCL-5V   AT328    28       28         1
+SCL-5V   ATMEGA   28       28         1
          R5       1        1          1
          T1       3        E          1
          T2       1        C          1
@@ -180,20 +186,20 @@ SDA      R7       1        1          1
          T4       3        E          1
          UPCB     1        S          1
 
-SDA-5V   AT328    27       27         1
+SDA-5V   ATMEGA   27       27         1
          R6       1        1          1
          T3       3        E          1
          T4       1        C          1
 
-TX-RX    AT328    2        2          1
+TX-RX    ATMEGA   2        2          1
          PGM      2        S          1
 
-US1DATA  AT328    6        6          1
+US1DATA  ATMEGA   6        6          1
          US1      1        S          1
 
-US2DATA  AT328    5        5          1
+US2DATA  ATMEGA   5        5          1
          US2      1        S          1
 
-US3DATA  AT328    4        4          1
+US3DATA  ATMEGA   4        4          1
          US3      1        S          1
 
