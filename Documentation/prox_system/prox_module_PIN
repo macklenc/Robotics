@@ -1,6 +1,6 @@
 Pinlist
 
-Exported from prox_module.sch at 12/31/2012 10:19:35 AM
+Exported from prox_module.sch at 12/31/2012 5:12:00 PM
 
 EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
 
@@ -35,22 +35,29 @@ AT328    1        1          pas      RST-2
          27       27         pas      SDA-5V
          28       28         pas      SCL-5V
 
-BUMPERS  1        1          pas      BMP-DBNCE1
-         2        2          pas      GND
-         3        3          pas      BMP-DBNCE2
-         4        4          pas      GND
-         5        5          pas      BMP-DBNCE3
-         6        6          pas      GND
-         7        7          pas      BMP-DBNCE4
-         8        8          pas      GND
-         9        9          pas      BMP-DBNCE5
-         10       10         pas      GND
-         11       11         pas      BMP-DBNCE6
-         12       12         pas      GND
-         13       13         pas      BMP-DBNCE7
-         14       14         pas      GND
-         15       15         pas      BMP-DBNCE8
-         16       16         pas      GND
+B1       1        S          pas      GND
+         2        S          pas      BMP-DBNCE1
+
+B2       1        S          pas      GND
+         2        S          pas      BMP-DBNCE2
+
+B3       1        S          pas      GND
+         2        S          pas      BMP-DBNCE3
+
+B4       1        S          pas      GND
+         2        S          pas      BMP-DBNCE4
+
+B5       1        S          pas      GND
+         2        S          pas      BMP-DBNCE5
+
+B6       1        S          pas      GND
+         2        S          pas      BMP-DBNCE6
+
+B7       1        S          pas      GND
+         2        S          pas      BMP-DBNCE7
+
+B8       1        S          pas      GND
+         2        S          pas      BMP-DBNCE8
 
 C1       1        1          pas      GND
          2        2          pas      CLK-1
@@ -124,9 +131,11 @@ IC2      1        I          in                ***   unused    ***
 LED1     A        A          pas      LEDNET-2
          K        C          pas      GND
 
-PGM      1        1          pas      RST-1
-         2        2          pas      TX-RX
-         3        3          pas      RX-TX
+PGM      1        S          pas      RST-1
+         2        S          pas      TX-RX
+         3        S          pas      RX-TX
+         4        S          pas      GND
+         5        S          pas      5V
 
 Q1       1        1          pas      CLK-1
          2        2          pas      CLK-2
@@ -176,13 +185,13 @@ R14      1        1          pas      5V
 R15      1        1          pas      5V
          2        2          pas      BMP-DBNCE8
 
+R16      1        1          pas      RST-1
+         2        2          pas      5V
+
 S1       1        S          pas      GND
          2        S1         pas      GND
          3        P          pas      RST-SW
          4        P1         pas      RST-SW
-
-S2       1        1          pas      RST
-         2        2          pas      RST-1
 
 T1       1        C          pas      SCL
          2        B          pas      I2C-EN
@@ -200,22 +209,21 @@ T4       1        C          pas      SDA-5V
          2        B          pas      I2C-EN
          3        E          pas      SDA
 
-UPCB     1        1          pas      5V
-         2        2          pas      3V
-         3        3          pas      GND
-         4        4          pas      SCL
-         5        5          pas      SDA
-         6        6          pas      RST
+UPCB     1        S          pas      SDA
+         2        S          pas      5V
+         3        S          pas      GND
+         4        S          pas      3V
+         5        S          pas      SCL
 
-US1      1        1          pas      US1DATA
-         2        2          pas      GND
-         3        3          pas      5V
+US1      1        S          pas      US1DATA
+         2        S          pas      GND
+         3        S          pas      5V
 
-US2      1        1          pas      US2DATA
-         2        2          pas      GND
-         3        3          pas      5V
+US2      1        S          pas      US2DATA
+         2        S          pas      GND
+         3        S          pas      5V
 
-US3      1        1          pas      US3DATA
-         2        2          pas      GND
-         3        3          pas      5V
+US3      1        S          pas      US3DATA
+         2        S          pas      GND
+         3        S          pas      5V
 

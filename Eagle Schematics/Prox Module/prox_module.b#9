@@ -56,9 +56,9 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="100" y2="0" width="0" layer="20"/>
-<wire x1="100" y1="0" x2="100" y2="80" width="0" layer="20"/>
-<wire x1="100" y1="80" x2="0" y2="80" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="64.44" y2="0" width="0" layer="20"/>
+<wire x1="64.44" y1="0" x2="64.44" y2="80" width="0" layer="20"/>
+<wire x1="64.44" y1="80" x2="0" y2="80" width="0" layer="20"/>
 <wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
@@ -1834,7 +1834,6 @@ design rules under a new name.</description>
 </element>
 <element name="R2" library="rcl" package="0204/7" value="10KOHM" x="16.51" y="16.51"/>
 <element name="C3" library="rcl" package="085CS_1AR" value="100uF" x="11.43" y="54.61" rot="R90"/>
-<element name="C4" library="rcl" package="085CS_1AR" value="0.1uF" x="3.81" y="54.61" rot="R90"/>
 <element name="C5" library="rcl" package="C025-024X044" value="0.1uF" x="21.59" y="48.26"/>
 <element name="PGM" library="con-lstb" package="MA03-1" value="" x="54.61" y="19.05">
 <attribute name="OC_NEWARK" value="unknown" x="72.39" y="-33.02" size="1.778" layer="27" display="off"/>
@@ -1899,6 +1898,7 @@ design rules under a new name.</description>
 <element name="R15" library="rcl" package="0204/7" value="10KOHM" x="6.35" y="43.18"/>
 <element name="C13" library="rcl" package="C025-024X044" value="0.1uF" x="17.78" y="54.61"/>
 <element name="IC2" library="74xx-us" package="DIL14" value="74LS14N" x="31.75" y="38.1" rot="R270"/>
+<element name="C4" library="rcl" package="C025-024X044" value="0.1uF" x="2.54" y="-3.81"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1913,7 +1913,6 @@ design rules under a new name.</description>
 <contactref element="S1" pad="2"/>
 <contactref element="S1" pad="1"/>
 <contactref element="C3" pad="-"/>
-<contactref element="C4" pad="-"/>
 <contactref element="US3" pad="2"/>
 <contactref element="US2" pad="2"/>
 <contactref element="US1" pad="2"/>
@@ -1964,7 +1963,6 @@ design rules under a new name.</description>
 <wire x1="17.78" y1="55.88" x2="11.43" y2="55.88" width="0.254" layer="16"/>
 <wire x1="11.43" y1="55.88" x2="6.35" y2="55.88" width="0.254" layer="16"/>
 <wire x1="19.05" y1="54.61" x2="17.78" y2="55.88" width="0.254" layer="16"/>
-<wire x1="3.81" y1="52.07" x2="3.81" y2="51.36" width="0.254" layer="1"/>
 <wire x1="11.43" y1="54.61" x2="11.43" y2="51.36" width="0.254" layer="1"/>
 <wire x1="11.43" y1="55.88" x2="11.43" y2="54.61" width="0.254" layer="16"/>
 <wire x1="26.67" y1="69.85" x2="26.67" y2="64.77" width="0.254" layer="1"/>
@@ -1991,6 +1989,8 @@ design rules under a new name.</description>
 <wire x1="26.67" y1="54.61" x2="26.67" y2="48.26" width="0.254" layer="1"/>
 <via x="5.08" y="54.61" extent="1-16" drill="0.6096"/>
 <via x="11.43" y="54.61" extent="1-16" drill="0.6096"/>
+<contactref element="C4" pad="2"/>
+<wire x1="3.81" y1="-3.81" x2="6.35" y2="3.81" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="IC1" pad="14"/>
@@ -2570,7 +2570,6 @@ design rules under a new name.</description>
 <contactref element="AT328" pad="7"/>
 <contactref element="R2" pad="2"/>
 <contactref element="C3" pad="+"/>
-<contactref element="C4" pad="+"/>
 <contactref element="R5" pad="2"/>
 <contactref element="R6" pad="2"/>
 <contactref element="US1" pad="3"/>
@@ -2612,7 +2611,6 @@ design rules under a new name.</description>
 <wire x1="1.27" y1="54.61" x2="3.81" y2="57.15" width="0.254" layer="1"/>
 <wire x1="1.27" y1="44.45" x2="1.27" y2="54.61" width="0.254" layer="1"/>
 <wire x1="2.54" y1="43.18" x2="1.27" y2="44.45" width="0.254" layer="1"/>
-<wire x1="3.81" y1="57.15" x2="3.81" y2="57.86" width="0.254" layer="1"/>
 <wire x1="2.54" y1="39.37" x2="2.54" y2="35.56" width="0.254" layer="1"/>
 <wire x1="1.27" y1="25.4" x2="2.54" y2="24.13" width="0.254" layer="1"/>
 <wire x1="1.27" y1="44.45" x2="1.27" y2="25.4" width="0.254" layer="1"/>
@@ -2626,6 +2624,8 @@ design rules under a new name.</description>
 <wire x1="2.54" y1="43.18" x2="2.54" y2="53.34" width="0.254" layer="16"/>
 <wire x1="11.43" y1="22.86" x2="12.7" y2="24.13" width="0.254" layer="16"/>
 <wire x1="2.54" y1="22.86" x2="11.43" y2="22.86" width="0.254" layer="16"/>
+<contactref element="C4" pad="1"/>
+<wire x1="1.27" y1="-3.81" x2="6.35" y2="1.27" width="0" layer="19" extent="16-16"/>
 </signal>
 </signals>
 </board>

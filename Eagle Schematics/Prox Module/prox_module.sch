@@ -16134,19 +16134,19 @@ Based on the following sources:
 <part name="B6" library="con-molex" deviceset="22-23-2021" device=""/>
 <part name="B7" library="con-molex" deviceset="22-23-2021" device=""/>
 <part name="B8" library="con-molex" deviceset="22-23-2021" device=""/>
-<part name="PGM" library="con-molex" deviceset="22-23-2031" device=""/>
 <part name="US1" library="con-molex" deviceset="22-23-2031" device=""/>
 <part name="US2" library="con-molex" deviceset="22-23-2031" device=""/>
 <part name="US3" library="con-molex" deviceset="22-23-2031" device=""/>
 <part name="UPCB" library="con-molex" deviceset="22-23-2051" device=""/>
 <part name="R16" library="rcl" deviceset="R-US_" device="0204/7" value="10KOHM"/>
 <part name="C3" library="rcl" deviceset="CPOL-US" device="E2-5" value="100uF"/>
+<part name="PGM" library="con-molex" deviceset="22-23-2051" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="190.5" y="33.02" size="2.54" layer="94" font="vector" align="center">Christopher Macklen</text>
-<text x="241.3" y="7.62" size="2.54" layer="94" font="vector" align="center">1.2</text>
+<text x="241.3" y="7.62" size="2.54" layer="94" font="vector" align="center">1.3</text>
 <text x="157.48" y="33.02" size="2.54" layer="94" font="vector" align="center">Engineer:</text>
 </plain>
 <instances>
@@ -16211,9 +16211,6 @@ Based on the following sources:
 <instance part="B7" gate="-2" x="233.68" y="170.18"/>
 <instance part="B8" gate="-1" x="238.76" y="172.72"/>
 <instance part="B8" gate="-2" x="238.76" y="170.18"/>
-<instance part="PGM" gate="-1" x="35.56" y="99.06" rot="R180"/>
-<instance part="PGM" gate="-2" x="35.56" y="101.6" rot="R180"/>
-<instance part="PGM" gate="-3" x="35.56" y="104.14" rot="R180"/>
 <instance part="US1" gate="-1" x="30.48" y="55.88" rot="R180"/>
 <instance part="US1" gate="-2" x="30.48" y="58.42" rot="R180"/>
 <instance part="US1" gate="-3" x="30.48" y="60.96" rot="R180"/>
@@ -16230,6 +16227,11 @@ Based on the following sources:
 <instance part="UPCB" gate="-5" x="10.16" y="96.52"/>
 <instance part="R16" gate="G$1" x="27.94" y="137.16" rot="R180"/>
 <instance part="C3" gate="G$1" x="116.84" y="175.26"/>
+<instance part="PGM" gate="-1" x="33.02" y="99.06" rot="R180"/>
+<instance part="PGM" gate="-2" x="33.02" y="101.6" rot="R180"/>
+<instance part="PGM" gate="-3" x="33.02" y="104.14" rot="R180"/>
+<instance part="PGM" gate="-4" x="33.02" y="106.68" rot="R180"/>
+<instance part="PGM" gate="-5" x="33.02" y="109.22" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -16262,7 +16264,8 @@ Based on the following sources:
 <segment>
 <label x="10.16" y="116.84" size="1.778" layer="95" rot="R90"/>
 <pinref part="AT328" gate="G$1" pin="22"/>
-<wire x1="10.16" y1="114.3" x2="10.16" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="114.3" x2="10.16" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="119.38" x2="10.16" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="129.54" x2="10.16" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="152.4" x2="99.06" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="152.4" x2="99.06" y2="177.8" width="0.1524" layer="91"/>
@@ -16405,6 +16408,14 @@ Based on the following sources:
 <junction x="7.62" y="101.6"/>
 <pinref part="C3" gate="G$1" pin="-"/>
 <junction x="116.84" y="170.18"/>
+<pinref part="PGM" gate="-4" pin="S"/>
+<wire x1="35.56" y1="106.68" x2="38.1" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="106.68" x2="38.1" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="114.3" x2="20.32" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="114.3" x2="20.32" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="119.38" x2="10.16" y2="119.38" width="0.1524" layer="91"/>
+<junction x="10.16" y="119.38"/>
+<junction x="35.56" y="106.68"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -16526,24 +16537,24 @@ Based on the following sources:
 </net>
 <net name="TX-RX" class="0">
 <segment>
-<wire x1="38.1" y1="101.6" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="101.6" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="101.6" x2="53.34" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="AT328" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="165.1" x2="73.66" y2="165.1" width="0.1524" layer="91"/>
 <junction x="73.66" y="165.1"/>
 <pinref part="PGM" gate="-2" pin="S"/>
-<junction x="38.1" y="101.6"/>
+<junction x="35.56" y="101.6"/>
 </segment>
 </net>
 <net name="RX-TX" class="0">
 <segment>
-<wire x1="38.1" y1="104.14" x2="55.88" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="104.14" x2="55.88" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="104.14" x2="55.88" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="AT328" gate="G$1" pin="3"/>
 <wire x1="55.88" y1="162.56" x2="73.66" y2="162.56" width="0.1524" layer="91"/>
 <junction x="73.66" y="162.56"/>
 <pinref part="PGM" gate="-3" pin="S"/>
-<junction x="38.1" y="104.14"/>
+<junction x="35.56" y="104.14"/>
 </segment>
 </net>
 <net name="SCL-5V" class="0">
@@ -16626,12 +16637,12 @@ Based on the following sources:
 <junction x="43.18" y="154.94"/>
 <wire x1="43.18" y1="99.06" x2="43.18" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="137.16" x2="43.18" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="99.06" x2="43.18" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="PGM" gate="-1" pin="S"/>
-<junction x="38.1" y="99.06"/>
+<wire x1="35.56" y1="99.06" x2="43.18" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="137.16" x2="43.18" y2="137.16" width="0.1524" layer="91"/>
 <junction x="43.18" y="137.16"/>
+<pinref part="PGM" gate="-1" pin="S"/>
+<junction x="35.56" y="99.06"/>
 </segment>
 </net>
 <net name="US1DATA" class="0">
@@ -17008,7 +17019,8 @@ Based on the following sources:
 <junction x="12.7" y="124.46"/>
 <junction x="22.86" y="124.46"/>
 <wire x1="12.7" y1="114.3" x2="17.78" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="114.3" x2="17.78" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="114.3" x2="17.78" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="91.44" x2="17.78" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="68.58" x2="43.18" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="68.58" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
 <junction x="12.7" y="114.3"/>
@@ -17061,6 +17073,13 @@ Based on the following sources:
 <junction x="12.7" y="137.16"/>
 <pinref part="C3" gate="G$1" pin="+"/>
 <junction x="116.84" y="177.8"/>
+<pinref part="PGM" gate="-5" pin="S"/>
+<wire x1="35.56" y1="109.22" x2="35.56" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="111.76" x2="22.86" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="111.76" x2="22.86" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="91.44" x2="17.78" y2="91.44" width="0.1524" layer="91"/>
+<junction x="17.78" y="91.44"/>
+<junction x="35.56" y="109.22"/>
 </segment>
 </net>
 </nets>
