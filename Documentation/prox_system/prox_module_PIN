@@ -1,6 +1,6 @@
 Pinlist
 
-Exported from prox_module.sch at 12/31/2012 7:55:44 PM
+Exported from prox_module.sch at 1/2/2013 4:44:04 PM
 
 EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
 
@@ -23,41 +23,41 @@ ATMEGA   1        1          pas      RST-2
          15       15         pas      BMP-OUT5
          16       16         pas      BMP-OUT6
          17       17         pas      BMP-OUT7
-         18       18         pas               *** unconnected ***
+         18       18         pas      TEST
          19       19         pas      LEDNET-1
          20       20         pas      5V
          21       21         pas      5V
          22       22         pas      GND
          23       23         pas      BMP-OUT8
-         24       24         pas               *** unconnected ***
-         25       25         pas               *** unconnected ***
-         26       26         pas               *** unconnected ***
+         24       24         pas      OPTION1
+         25       25         pas      OPTION2
+         26       26         pas      OPTION3
          27       27         pas      SDA-5V
          28       28         pas      SCL-5V
 
 B1       1        S          pas      GND
-         2        S          pas      BMP-DBNCE1
+         2        S          pas      BMP-IN1
 
 B2       1        S          pas      GND
-         2        S          pas      BMP-DBNCE2
+         2        S          pas      BMP-IN2
 
 B3       1        S          pas      GND
-         2        S          pas      BMP-DBNCE3
+         2        S          pas      BMP-IN3
 
 B4       1        S          pas      GND
-         2        S          pas      BMP-DBNCE4
+         2        S          pas      BMP-IN4
 
 B5       1        S          pas      GND
-         2        S          pas      BMP-DBNCE5
+         2        S          pas      BMP-IN5
 
 B6       1        S          pas      GND
-         2        S          pas      BMP-DBNCE6
+         2        S          pas      BMP-IN6
 
 B7       1        S          pas      GND
-         2        S          pas      BMP-DBNCE7
+         2        S          pas      BMP-IN7
 
 B8       1        S          pas      GND
-         2        S          pas      BMP-DBNCE8
+         2        S          pas      BMP-IN8
 
 C1       1        1          pas      GND
          2        2          pas      CLK-1
@@ -74,28 +74,28 @@ C4       1        1          pas      5V
 C5       1        1          pas      RST-2
          2        2          pas      RST-1
 
-C6       1        1          pas      BMP-DBNCE1
+C6       1        1          pas      BMP-IN1
          2        2          pas      GND
 
-C7       1        1          pas      BMP-DBNCE2
+C7       1        1          pas      BMP-IN2
          2        2          pas      GND
 
-C8       1        1          pas      BMP-DBNCE3
+C8       1        1          pas      BMP-IN3
          2        2          pas      GND
 
-C9       1        1          pas      BMP-DBNCE4
+C9       1        1          pas      BMP-IN4
          2        2          pas      GND
 
-C10      1        1          pas      BMP-DBNCE5
+C10      1        1          pas      BMP-IN5
          2        2          pas      GND
 
-C11      1        1          pas      BMP-DBNCE6
+C11      1        1          pas      BMP-IN6
          2        2          pas      GND
 
-C12      1        1          pas      BMP-DBNCE7
+C12      1        1          pas      BMP-IN7
          2        2          pas      GND
 
-C13      1        1          pas      BMP-DBNCE8
+C13      1        1          pas      BMP-IN8
          2        2          pas      GND
 
 C14      +        +          pas      3V
@@ -104,19 +104,19 @@ C14      +        +          pas      3V
 C15      1        1          pas      3V
          2        2          pas      GND
 
-IC1      1        I          in       BMP-DBNCE4
+IC1      1        I          in       BMP-IN4
          2        O          out      BMP-OUT4
-         3        I          in       BMP-DBNCE5
+         3        I          in       BMP-IN5
          4        O          out      BMP-OUT8
-         5        I          in       BMP-DBNCE6
+         5        I          in       BMP-IN6
          6        O          out      BMP-OUT7
          7        GND        pwr      GND
          8        O          out      BMP-OUT3
-         9        I          in       BMP-DBNCE3
+         9        I          in       BMP-IN3
          10       O          out      BMP-OUT2
-         11       I          in       BMP-DBNCE2
+         11       I          in       BMP-IN2
          12       O          out      BMP-OUT1
-         13       I          in       BMP-DBNCE1
+         13       I          in       BMP-IN1
          14       VCC        pwr      5V
 
 IC2      1        I          in                ***   unused    ***
@@ -129,19 +129,26 @@ IC2      1        I          in                ***   unused    ***
          8        O          out               ***   unused    ***
          9        I          in                ***   unused    ***
          10       O          out      BMP-OUT5
-         11       I          in       BMP-DBNCE8
+         11       I          in       BMP-IN8
          12       O          out      BMP-OUT6
-         13       I          in       BMP-DBNCE7
+         13       I          in       BMP-IN7
          14       VCC        pwr      5V
 
 LED1     A        A          pas      LEDNET-2
          K        C          pas      GND
+
+OPTION   1        S          pas      OPTION1
+         2        S          pas      OPTION2
+         3        S          pas      OPTION3
 
 PGM      1        S          pas      RST-1
          2        S          pas      TX-RX
          3        S          pas      RX-TX
          4        S          pas      GND
          5        S          pas      5V
+
+POWER    1        S          pas      GND
+         2        S          pas      5V
 
 Q1       1        1          pas      CLK-1
          2        2          pas      CLK-2
@@ -168,28 +175,28 @@ R7       1        1          pas      SDA
          2        2          pas      3V
 
 R8       1        1          pas      5V
-         2        2          pas      BMP-DBNCE1
+         2        2          pas      BMP-IN1
 
 R9       1        1          pas      5V
-         2        2          pas      BMP-DBNCE2
+         2        2          pas      BMP-IN2
 
 R10      1        1          pas      5V
-         2        2          pas      BMP-DBNCE3
+         2        2          pas      BMP-IN3
 
 R11      1        1          pas      5V
-         2        2          pas      BMP-DBNCE4
+         2        2          pas      BMP-IN4
 
 R12      1        1          pas      5V
-         2        2          pas      BMP-DBNCE5
+         2        2          pas      BMP-IN5
 
 R13      1        1          pas      5V
-         2        2          pas      BMP-DBNCE6
+         2        2          pas      BMP-IN6
 
 R14      1        1          pas      5V
-         2        2          pas      BMP-DBNCE7
+         2        2          pas      BMP-IN7
 
 R15      1        1          pas      5V
-         2        2          pas      BMP-DBNCE8
+         2        2          pas      BMP-IN8
 
 R16      1        1          pas      RST-1
          2        2          pas      5V
@@ -214,6 +221,38 @@ T3       1        C          pas      SDA
 T4       1        C          pas      SDA-5V
          2        B          pas      I2C-EN
          3        E          pas      SDA
+
+T5       1        C          pas      GND
+         2        B          pas      TEST
+         3        E          pas      BMP-IN1
+
+T6       1        C          pas      GND
+         2        B          pas      TEST
+         3        E          pas      BMP-IN2
+
+T7       1        C          pas      GND
+         2        B          pas      TEST
+         3        E          pas      BMP-IN3
+
+T8       1        C          pas      GND
+         2        B          pas      TEST
+         3        E          pas      BMP-IN4
+
+T9       1        C          pas      GND
+         2        B          pas      TEST
+         3        E          pas      BMP-IN6
+
+T10      1        C          pas      GND
+         2        B          pas      TEST
+         3        E          pas      BMP-IN7
+
+T11      1        C          pas      GND
+         2        B          pas      TEST
+         3        E          pas      BMP-IN8
+
+T12      1        C          pas      GND
+         2        B          pas      TEST
+         3        E          pas      BMP-IN5
 
 UPCB     1        S          pas      SDA
          2        S          pas      5V

@@ -1,6 +1,6 @@
 Netlist
 
-Exported from prox_module.sch at 12/31/2012 7:55:24 PM
+Exported from prox_module.sch at 1/2/2013 4:43:48 PM
 
 EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
 
@@ -21,6 +21,7 @@ Net      Part     Pad      Pin        Sheet
          IC1      14       VCC        1
          IC2      14       VCC        1
          PGM      5        S          1
+         POWER    2        S          1
          R10      1        1          1
          R11      1        1          1
          R12      1        1          1
@@ -38,45 +39,53 @@ Net      Part     Pad      Pin        Sheet
          US2      3        S          1
          US3      3        S          1
 
-BMP-DBNCE1 B1       2        S          1
+BMP-IN1  B1       2        S          1
          C6       1        1          1
          IC1      13       I          1
          R8       2        2          1
+         T5       3        E          1
 
-BMP-DBNCE2 B2       2        S          1
+BMP-IN2  B2       2        S          1
          C7       1        1          1
          IC1      11       I          1
          R9       2        2          1
+         T6       3        E          1
 
-BMP-DBNCE3 B3       2        S          1
+BMP-IN3  B3       2        S          1
          C8       1        1          1
          IC1      9        I          1
          R10      2        2          1
+         T7       3        E          1
 
-BMP-DBNCE4 B4       2        S          1
+BMP-IN4  B4       2        S          1
          C9       1        1          1
          IC1      1        I          1
          R11      2        2          1
+         T8       3        E          1
 
-BMP-DBNCE5 B5       2        S          1
+BMP-IN5  B5       2        S          1
          C10      1        1          1
          IC1      3        I          1
          R12      2        2          1
+         T12      3        E          1
 
-BMP-DBNCE6 B6       2        S          1
+BMP-IN6  B6       2        S          1
          C11      1        1          1
          IC1      5        I          1
          R13      2        2          1
+         T9       3        E          1
 
-BMP-DBNCE7 B7       2        S          1
+BMP-IN7  B7       2        S          1
          C12      1        1          1
          IC2      13       I          1
          R14      2        2          1
+         T10      3        E          1
 
-BMP-DBNCE8 B8       2        S          1
+BMP-IN8  B8       2        S          1
          C13      1        1          1
          IC2      11       I          1
          R15      2        2          1
+         T11      3        E          1
 
 BMP-OUT1 ATMEGA   11       11         1
          IC1      12       O          1
@@ -138,8 +147,17 @@ GND      ATMEGA   22       22         1
          IC2      7        GND        1
          LED1     K        C          1
          PGM      4        S          1
+         POWER    1        S          1
          S1       1        S          1
          S1       2        S1         1
+         T10      1        C          1
+         T11      1        C          1
+         T12      1        C          1
+         T5       1        C          1
+         T6       1        C          1
+         T7       1        C          1
+         T8       1        C          1
+         T9       1        C          1
          UPCB     3        S          1
          US1      2        S          1
          US2      2        S          1
@@ -156,6 +174,15 @@ LEDNET-1 ATMEGA   19       19         1
 
 LEDNET-2 LED1     A        A          1
          R1       2        2          1
+
+OPTION1  ATMEGA   24       24         1
+         OPTION   1        S          1
+
+OPTION2  ATMEGA   25       25         1
+         OPTION   2        S          1
+
+OPTION3  ATMEGA   26       26         1
+         OPTION   3        S          1
 
 RST-1    C5       2        2          1
          PGM      1        S          1
@@ -190,6 +217,16 @@ SDA-5V   ATMEGA   27       27         1
          R6       1        1          1
          T3       3        E          1
          T4       1        C          1
+
+TEST     ATMEGA   18       18         1
+         T10      2        B          1
+         T11      2        B          1
+         T12      2        B          1
+         T5       2        B          1
+         T6       2        B          1
+         T7       2        B          1
+         T8       2        B          1
+         T9       2        B          1
 
 TX-RX    ATMEGA   2        2          1
          PGM      2        S          1

@@ -1,6 +1,6 @@
 Pinlist
 
-Exported from whisker_module.sch at 1/1/2013 11:21:57 PM
+Exported from whisker_module.sch at 1/2/2013 4:41:39 PM
 
 EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
 
@@ -9,20 +9,20 @@ Part     Pad      Pin        Dir      Net
 ATMEGA   1        1          pas      RST-2
          2        2          pas      TX-RX
          3        3          pas      RX-TX
-         4        4          pas      IN1
-         5        5          pas      IN2
-         6        6          pas      IN3
+         4        4          pas      RESULT1
+         5        5          pas      RESULT2
+         6        6          pas      RESULT3
          7        7          pas      5V
          8        8          pas      GND
          9        9          pas      CLK-1
          10       10         pas      CLK-2
-         11       11         pas      OUT1
-         12       12         pas      OUT2
-         13       13         pas      IN4
-         14       14         pas      IN5
-         15       15         pas      OUT3
-         16       16         pas      OUT4
-         17       17         pas      OPTION6
+         11       11         pas      SELECT1
+         12       12         pas      SELECT2
+         13       13         pas      RESULT4
+         14       14         pas      RESULT5
+         15       15         pas      SELECT3
+         16       16         pas      SELECT4
+         17       17         pas      SELECT5
          18       18         pas      OPTION5
          19       19         pas      LEDNET-1
          20       20         pas      5V
@@ -50,32 +50,330 @@ C4       1        1          pas      5V
 C5       1        1          pas      RST-2
          2        2          pas      RST-1
 
+C6       1        1          pas      W1
+         2        2          pas      GND
+
+C7       1        1          pas      W2
+         2        2          pas      GND
+
+C8       1        1          pas      W3
+         2        2          pas      GND
+
+C9       1        1          pas      W4
+         2        2          pas      GND
+
+C10      1        1          pas      W5
+         2        2          pas      GND
+
+C11      1        1          pas      W6
+         2        2          pas      GND
+
+C12      1        1          pas      W7
+         2        2          pas      GND
+
+C13      1        1          pas      W8
+         2        2          pas      GND
+
 C14      +        +          pas      3V
          -        -          pas      5V
 
 C15      1        1          pas      3V
          2        2          pas      5V
 
-INPUT    1        S          pas      IN1
-         2        S          pas      IN2
-         3        S          pas      IN3
-         4        S          pas      IN4
-         5        S          pas      IN5
+C16      1        1          pas      W9
+         2        2          pas      GND
+
+C17      1        1          pas      W10
+         2        2          pas      GND
+
+C18      1        1          pas      W11
+         2        2          pas      GND
+
+C19      1        1          pas      W12
+         2        2          pas      GND
+
+C20      1        1          pas      W13
+         2        2          pas      GND
+
+C21      1        1          pas      W14
+         2        2          pas      GND
+
+C22      1        1          pas      W15
+         2        2          pas      GND
+
+C23      1        1          pas      W16
+         2        2          pas      GND
+
+C24      1        1          pas      W17
+         2        2          pas      GND
+
+C25      1        1          pas      W18
+         2        2          pas      GND
+
+C26      1        1          pas      W19
+         2        2          pas      GND
+
+C27      1        1          pas      W20
+         2        2          pas      GND
+
+C28      1        1          pas      W21
+         2        2          pas      GND
+
+C29      1        1          pas      W22
+         2        2          pas      GND
+
+C30      1        1          pas      W23
+         2        2          pas      GND
+
+C31      1        1          pas      W24
+         2        2          pas      GND
+
+C32      1        1          pas      W25
+         2        2          pas      GND
+
+C33      1        1          pas      W26
+         2        2          pas      GND
+
+C34      1        1          pas      W27
+         2        2          pas      GND
+
+C35      1        1          pas      W28
+         2        2          pas      GND
+
+C36      1        1          pas      W29
+         2        2          pas      GND
+
+C37      1        1          pas      W30
+         2        2          pas      GND
+
+C38      1        1          pas      W31
+         2        2          pas      GND
+
+C39      1        1          pas      W32
+         2        2          pas      GND
+
+C40      1        1          pas      W33
+         2        2          pas      GND
+
+C41      1        1          pas      W34
+         2        2          pas      GND
+
+C42      1        1          pas      W35
+         2        2          pas      GND
+
+C43      1        1          pas      W36
+         2        2          pas      GND
+
+C44      1        1          pas      W37
+         2        2          pas      GND
+
+C45      1        1          pas      W38
+         2        2          pas      GND
+
+C46      1        1          pas      W39
+         2        2          pas      GND
+
+C47      1        1          pas      W40
+         2        2          pas      GND
+
+IC1      1        I          in       W4
+         2        O          out      D4
+         3        I          in       W5
+         4        O          out      D5
+         5        I          in       W6
+         6        O          out      D6
+         7        GND        pwr      GND
+         8        O          out      D3
+         9        I          in       W3
+         10       O          out      D2
+         11       I          in       W2
+         12       O          out      D1
+         13       I          in       W1
+         14       VCC        pwr      5V
+
+IC2      1        I          in       W10
+         2        O          out      D10
+         3        I          in       W11
+         4        O          out      D11
+         5        I          in       W12
+         6        O          out      D12
+         7        GND        pwr      GND
+         8        O          out      D9
+         9        I          in       W9
+         10       O          out      D8
+         11       I          in       W8
+         12       O          out      D7
+         13       I          in       W7
+         14       VCC        pwr      5V
+
+IC3      1        I          in       W16
+         2        O          out      D16
+         3        I          in       W17
+         4        O          out      D17
+         5        I          in       W18
+         6        O          out      D18
+         7        GND        pwr      GND
+         8        O          out      D15
+         9        I          in       W15
+         10       O          out      D14
+         11       I          in       W14
+         12       O          out      D13
+         13       I          in       W13
+         14       VCC        pwr      5V
+
+IC4      1        I          in       W22
+         2        O          out      D22
+         3        I          in       W23
+         4        O          out      D23
+         5        I          in       W24
+         6        O          out      D24
+         7        GND        pwr      GND
+         8        O          out      D21
+         9        I          in       W21
+         10       O          out      D20
+         11       I          in       W20
+         12       O          out      D19
+         13       I          in       W19
+         14       VCC        pwr      5V
+
+IC5      1        I          in       W28
+         2        O          out      D28
+         3        I          in       W29
+         4        O          out      D29
+         5        I          in       W30
+         6        O          out      D30
+         7        GND        pwr      GND
+         8        O          out      D27
+         9        I          in       W27
+         10       O          out      D26
+         11       I          in       W26
+         12       O          out      D25
+         13       I          in       W25
+         14       VCC        pwr      5V
+
+IC6      1        I          in       W34
+         2        O          out      D34
+         3        I          in       W35
+         4        O          out      D35
+         5        I          in       W36
+         6        O          out      D36
+         7        GND        pwr      GND
+         8        O          out      D33
+         9        I          in       W33
+         10       O          out      D32
+         11       I          in       W32
+         12       O          out      D31
+         13       I          in       W31
+         14       VCC        pwr      5V
+
+IC7      1        I          in       W40
+         2        O          out      D40
+         3        I          in                ***   unused    ***
+         4        O          out               ***   unused    ***
+         5        I          in                ***   unused    ***
+         6        O          out               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      D39
+         9        I          in       W39
+         10       O          out      D38
+         11       I          in       W38
+         12       O          out      D37
+         13       I          in       W37
+         14       VCC        pwr      5V
 
 LED1     A        A          pas      LEDNET-2
          K        C          pas      GND
+
+M1       1        I3         in       D16
+         2        I2         in       D11
+         3        I1         in       D6
+         4        I0         in       D1
+         5        Y          out      RESULT1
+         6        Y'         out               *** unconnected ***
+         7        E'         in       SELECT4
+         8        GND        in       SELECT4
+         9        S2         in       SELECT3
+         10       S1         in       SELECT2
+         11       S0         in       SELECT1
+         12       I7         in       D36
+         13       I6         in       D31
+         14       I5         in       D26
+         15       I4         in       D21
+         16       VCC        in       5V
+
+M2       1        I3         in       D18
+         2        I2         in       D13
+         3        I1         in       D8
+         4        I0         in       D3
+         5        Y          out      RESULT3
+         6        Y'         out               *** unconnected ***
+         7        E'         in       SELECT4
+         8        GND        in       SELECT4
+         9        S2         in       SELECT3
+         10       S1         in       SELECT2
+         11       S0         in       SELECT1
+         12       I7         in       D38
+         13       I6         in       D33
+         14       I5         in       D28
+         15       I4         in       D23
+         16       VCC        in       5V
+
+M3       1        I3         in       D20
+         2        I2         in       D15
+         3        I1         in       D10
+         4        I0         in       D5
+         5        Y          out      RESULT5
+         6        Y'         out               *** unconnected ***
+         7        E'         in       SELECT4
+         8        GND        in       SELECT4
+         9        S2         in       SELECT2
+         10       S1         in       SELECT2
+         11       S0         in       SELECT1
+         12       I7         in       D40
+         13       I6         in       D35
+         14       I5         in       D30
+         15       I4         in       D25
+         16       VCC        in       5V
+
+M4       1        I3         in       D17
+         2        I2         in       D12
+         3        I1         in       D7
+         4        I0         in       D2
+         5        Y          out      RESULT2
+         6        Y'         out               *** unconnected ***
+         7        E'         in       SELECT4
+         8        GND        in       SELECT4
+         9        S2         in       SELECT3
+         10       S1         in       SELECT2
+         11       S0         in       SELECT1
+         12       I7         in       D37
+         13       I6         in       D32
+         14       I5         in       D27
+         15       I4         in       D22
+         16       VCC        in       5V
+
+M5       1        I3         in       D19
+         2        I2         in       D14
+         3        I1         in       D9
+         4        I0         in       D4
+         5        Y          out      RESULT4
+         6        Y'         out               *** unconnected ***
+         7        E'         in       SELECT4
+         8        GND        in       SELECT4
+         9        S2         in       SELECT3
+         10       S1         in       SELECT1
+         11       S0         in       SELECT1
+         12       I7         in       D39
+         13       I6         in       D34
+         14       I5         in       D29
+         15       I4         in       D24
+         16       VCC        in       5V
 
 OPTION   1        S          pas      OPTION1
          2        S          pas      OPTION2
          3        S          pas      OPTION3
          4        S          pas      OPTION4
          5        S          pas      OPTION5
-         6        S          pas      OPTION6
-
-OUTPUT   1        S          pas      OUT1
-         2        S          pas      OUT2
-         3        S          pas      OUT2
-         4        S          pas      OUT4
 
 PGM      1        S          pas      RST-1
          2        S          pas      TX-RX
@@ -86,7 +384,7 @@ PGM      1        S          pas      RST-1
 POWER    1        S          pas      GND
          2        S          pas      5V
 
-POWER2   1        S          pas      GND
+POWER1   1        S          pas      GND
          2        S          pas      5V
 
 Q1       1        1          pas      CLK-1
@@ -113,8 +411,128 @@ R6       1        1          pas      SDA-5V
 R7       1        1          pas      SDA
          2        2          pas      3V
 
+R8       1        1          pas      5V
+         2        2          pas      W1
+
+R9       1        1          pas      5V
+         2        2          pas      W2
+
+R10      1        1          pas      5V
+         2        2          pas      W3
+
+R11      1        1          pas      5V
+         2        2          pas      W4
+
+R12      1        1          pas      5V
+         2        2          pas      W5
+
+R13      1        1          pas      5V
+         2        2          pas      W6
+
+R14      1        1          pas      5V
+         2        2          pas      W7
+
+R15      1        1          pas      5V
+         2        2          pas      W8
+
 R16      1        1          pas      RST-1
          2        2          pas      5V
+
+R17      1        1          pas      5V
+         2        2          pas      W9
+
+R18      1        1          pas      5V
+         2        2          pas      W10
+
+R19      1        1          pas      5V
+         2        2          pas      W11
+
+R20      1        1          pas      5V
+         2        2          pas      W12
+
+R21      1        1          pas      5V
+         2        2          pas      W13
+
+R22      1        1          pas      5V
+         2        2          pas      W14
+
+R23      1        1          pas      5V
+         2        2          pas      W15
+
+R24      1        1          pas      5V
+         2        2          pas      W16
+
+R25      1        1          pas      5V
+         2        2          pas      W17
+
+R26      1        1          pas      5V
+         2        2          pas      W18
+
+R27      1        1          pas      5V
+         2        2          pas      W19
+
+R28      1        1          pas      5V
+         2        2          pas      W20
+
+R29      1        1          pas      5V
+         2        2          pas      W21
+
+R30      1        1          pas      5V
+         2        2          pas      W22
+
+R31      1        1          pas      5V
+         2        2          pas      W23
+
+R32      1        1          pas      5V
+         2        2          pas      W24
+
+R33      1        1          pas      5V
+         2        2          pas      W25
+
+R34      1        1          pas      5V
+         2        2          pas      W26
+
+R35      1        1          pas      5V
+         2        2          pas      W27
+
+R36      1        1          pas      5V
+         2        2          pas      W28
+
+R37      1        1          pas      5V
+         2        2          pas      W29
+
+R38      1        1          pas      5V
+         2        2          pas      W30
+
+R39      1        1          pas      5V
+         2        2          pas      W31
+
+R40      1        1          pas      5V
+         2        2          pas      W32
+
+R41      1        1          pas      5V
+         2        2          pas      W33
+
+R42      1        1          pas      5V
+         2        2          pas      W34
+
+R43      1        1          pas      5V
+         2        2          pas      W35
+
+R44      1        1          pas      5V
+         2        2          pas      W36
+
+R45      1        1          pas      5V
+         2        2          pas      W37
+
+R46      1        1          pas      5V
+         2        2          pas      W38
+
+R47      1        1          pas      5V
+         2        2          pas      W39
+
+R48      1        1          pas      5V
+         2        2          pas      W40
 
 S1       1        S          pas      GND
          2        S1         pas      GND
@@ -137,9 +555,289 @@ T4       1        C          pas      SDA-5V
          2        B          pas      I2C-EN
          3        E          pas      SDA
 
+T6       1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W1
+
+T7       1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W2
+
+T8       1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W3
+
+T9       1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W4
+
+T10      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W5
+
+T11      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W6
+
+T12      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W7
+
+T13      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W8
+
+T14      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W9
+
+T15      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W10
+
+T16      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W11
+
+T17      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W12
+
+T18      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W13
+
+T19      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W14
+
+T20      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W15
+
+T21      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W16
+
+T22      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W17
+
+T23      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W18
+
+T24      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W19
+
+T25      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W20
+
+T26      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W21
+
+T27      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W22
+
+T28      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W23
+
+T29      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W24
+
+T30      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W25
+
+T31      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W26
+
+T32      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W27
+
+T33      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W28
+
+T34      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W29
+
+T35      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W30
+
+T36      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W31
+
+T37      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W32
+
+T38      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W33
+
+T39      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W34
+
+T40      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W35
+
+T41      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W36
+
+T42      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W37
+
+T43      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W38
+
+T44      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W39
+
+T45      1        C          pas      GND
+         2        B          pas      SELECT5
+         3        E          pas      W40
+
 UPCB     1        S          pas      SDA
          2        S          pas      5V
          3        S          pas      GND
          4        S          pas      3V
          5        S          pas      SCL
+
+X1       1        S          pas      GND
+         2        S          pas      W40
+
+X2       1        S          pas      GND
+         2        S          pas      W39
+
+X3       1        S          pas      GND
+         2        S          pas      W38
+
+X4       1        S          pas      GND
+         2        S          pas      W37
+
+X5       1        S          pas      GND
+         2        S          pas      W36
+
+X6       1        S          pas      GND
+         2        S          pas      W35
+
+X7       1        S          pas      GND
+         2        S          pas      W34
+
+X8       1        S          pas      GND
+         2        S          pas      W33
+
+X9       1        S          pas      GND
+         2        S          pas      W32
+
+X10      1        S          pas      GND
+         2        S          pas      W31
+
+X11      1        S          pas      GND
+         2        S          pas      W30
+
+X12      1        S          pas      GND
+         2        S          pas      W29
+
+X13      1        S          pas      GND
+         2        S          pas      W28
+
+X14      1        S          pas      GND
+         2        S          pas      W27
+
+X15      1        S          pas      GND
+         2        S          pas      W26
+
+X16      1        S          pas      GND
+         2        S          pas      W25
+
+X17      1        S          pas      GND
+         2        S          pas      W24
+
+X18      1        S          pas      GND
+         2        S          pas      W23
+
+X19      1        S          pas      GND
+         2        S          pas      W22
+
+X20      1        S          pas      GND
+         2        S          pas      W21
+
+X21      1        S          pas      GND
+         2        S          pas      W20
+
+X22      1        S          pas      GND
+         2        S          pas      W19
+
+X23      1        S          pas      GND
+         2        S          pas      W18
+
+X24      1        S          pas      GND
+         2        S          pas      W17
+
+X25      1        S          pas      GND
+         2        S          pas      W16
+
+X26      1        S          pas      GND
+         2        S          pas      W15
+
+X27      1        S          pas      GND
+         2        S          pas      W14
+
+X28      1        S          pas      GND
+         2        S          pas      W13
+
+X29      1        S          pas      GND
+         2        S          pas      W12
+
+X30      1        S          pas      GND
+         2        S          pas      W11
+
+X31      1        S          pas      GND
+         2        S          pas      W10
+
+X32      1        S          pas      GND
+         2        S          pas      W9
+
+X33      1        S          pas      GND
+         2        S          pas      W8
+
+X34      1        S          pas      GND
+         2        S          pas      W7
+
+X35      1        S          pas      GND
+         2        S          pas      W6
+
+X36      1        S          pas      GND
+         2        S          pas      W5
+
+X37      1        S          pas      GND
+         2        S          pas      W4
+
+X38      1        S          pas      GND
+         2        S          pas      W3
+
+X39      1        S          pas      GND
+         2        S          pas      W2
+
+X40      1        S          pas      GND
+         2        S          pas      W1
 
