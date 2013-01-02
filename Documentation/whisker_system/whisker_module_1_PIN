@@ -1,6 +1,6 @@
 Pinlist
 
-Exported from whisker_module_1.sch at 1/1/2013 5:15:53 PM
+Exported from whisker_module_1.sch at 1/1/2013 7:52:38 PM
 
 EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
 
@@ -139,7 +139,7 @@ IC1      1        I          in       W4
          11       I          in       W2
          12       O          out      D1
          13       I          in       W1
-         14       VCC        pwr      VCC
+         14       VCC        pwr      5V
 
 IC2      1        I          in       W10
          2        O          out      D10
@@ -154,7 +154,7 @@ IC2      1        I          in       W10
          11       I          in       W8
          12       O          out      D7
          13       I          in       W7
-         14       VCC        pwr      VCC
+         14       VCC        pwr      5V
 
 IC3      1        I          in       W16
          2        O          out      D16
@@ -169,7 +169,7 @@ IC3      1        I          in       W16
          11       I          in       W14
          12       O          out      D13
          13       I          in       W13
-         14       VCC        pwr      VCC
+         14       VCC        pwr      5V
 
 IC4      1        I          in       W22
          2        O          out      D22
@@ -184,7 +184,7 @@ IC4      1        I          in       W22
          11       I          in       W20
          12       O          out      D19
          13       I          in       W19
-         14       VCC        pwr      VCC
+         14       VCC        pwr      5V
 
 IC5      1        I          in       W28
          2        O          out      D28
@@ -199,7 +199,7 @@ IC5      1        I          in       W28
          11       I          in       W26
          12       O          out      D25
          13       I          in       W25
-         14       VCC        pwr      VCC
+         14       VCC        pwr      5V
 
 IC6      1        I          in       W34
          2        O          out      D34
@@ -214,7 +214,7 @@ IC6      1        I          in       W34
          11       I          in       W32
          12       O          out      D31
          13       I          in       W31
-         14       VCC        pwr      VCC
+         14       VCC        pwr      5V
 
 IC7      1        I          in       W40
          2        O          out      D40
@@ -229,96 +229,96 @@ IC7      1        I          in       W40
          11       I          in       W38
          12       O          out      D37
          13       I          in       W37
-         14       VCC        pwr      VCC
-
-IC8      1        D0         in       D1
-         2        G          in       GND
-         3        Y          out      OUTPUT1
-         4        GND        pwr      GND
-         5        W          out               *** unconnected ***
-         6        A          in       SELECT1
-         7        B          in       SELECT2
-         8        C          in       SELECT3
-         9        D7         in       D36
-         10       D6         in       D31
-         11       D5         in       D26
-         12       VCC        pwr      VCC
-         13       D4         in       D21
-         14       D3         in       D16
-         15       D2         in       D11
-         16       D1         in       D6
-
-IC9      1        D0         in       D2
-         2        G          in       GND
-         3        Y          out      OUTPUT2
-         4        GND        pwr      GND
-         5        W          out               *** unconnected ***
-         6        A          in       SELECT1
-         7        B          in       SELECT2
-         8        C          in       SELECT3
-         9        D7         in       D37
-         10       D6         in       D32
-         11       D5         in       D27
-         12       VCC        pwr      VCC
-         13       D4         in       D22
-         14       D3         in       D17
-         15       D2         in       D12
-         16       D1         in       D7
-
-IC10     1        D0         in       D3
-         2        G          in       GND
-         3        Y          out      OUTPUT3
-         4        GND        pwr      GND
-         5        W          out               *** unconnected ***
-         6        A          in       SELECT1
-         7        B          in       SELECT2
-         8        C          in       SELECT3
-         9        D7         in       D38
-         10       D6         in       D33
-         11       D5         in       D28
-         12       VCC        pwr      VCC
-         13       D4         in       D23
-         14       D3         in       D18
-         15       D2         in       D13
-         16       D1         in       D8
-
-IC11     1        D0         in       D4
-         2        G          in       GND
-         3        Y          out      OUTPUT4
-         4        GND        pwr      GND
-         5        W          out               *** unconnected ***
-         6        A          in       SELECT1
-         7        B          in       SELECT1
-         8        C          in       SELECT3
-         9        D7         in       D39
-         10       D6         in       D34
-         11       D5         in       D29
-         12       VCC        pwr      VCC
-         13       D4         in       D24
-         14       D3         in       D19
-         15       D2         in       D14
-         16       D1         in       D9
-
-IC12     1        D0         in       D5
-         2        G          in       GND
-         3        Y          out      OUTPUT5
-         4        GND        pwr      GND
-         5        W          out               *** unconnected ***
-         6        A          in       SELECT1
-         7        B          in       SELECT2
-         8        C          in       SELECT2
-         9        D7         in       D40
-         10       D6         in       D35
-         11       D5         in       D30
-         12       VCC        pwr      VCC
-         13       D4         in       D25
-         14       D3         in       D20
-         15       D2         in       D15
-         16       D1         in       D10
+         14       VCC        pwr      5V
 
 INPUT    1        S          pas      SELECT1
          2        S          pas      SELECT2
          3        S          pas      SELECT3
+
+M1       1        I3         in       D16
+         2        I2         in       D11
+         3        I1         in       D6
+         4        I0         in       D1
+         5        Y          out      OUTPUT1
+         6        Y'         out               *** unconnected ***
+         7        E'         in       GND
+         8        GND        in       GND
+         9        S2         in       SELECT3
+         10       S1         in       SELECT2
+         11       S0         in       SELECT1
+         12       I7         in       D36
+         13       I6         in       D31
+         14       I5         in       D26
+         15       I4         in       D21
+         16       VCC        in       5V
+
+M2       1        I3         in       D18
+         2        I2         in       D13
+         3        I1         in       D8
+         4        I0         in       D3
+         5        Y          out      OUTPUT3
+         6        Y'         out               *** unconnected ***
+         7        E'         in       GND
+         8        GND        in       GND
+         9        S2         in       SELECT3
+         10       S1         in       SELECT2
+         11       S0         in       SELECT1
+         12       I7         in       D38
+         13       I6         in       D33
+         14       I5         in       D28
+         15       I4         in       D23
+         16       VCC        in       5V
+
+M3       1        I3         in       D20
+         2        I2         in       D15
+         3        I1         in       D10
+         4        I0         in       D5
+         5        Y          out      OUTPUT5
+         6        Y'         out               *** unconnected ***
+         7        E'         in       GND
+         8        GND        in       GND
+         9        S2         in       SELECT2
+         10       S1         in       SELECT2
+         11       S0         in       SELECT1
+         12       I7         in       D40
+         13       I6         in       D35
+         14       I5         in       D30
+         15       I4         in       D25
+         16       VCC        in       5V
+
+M4       1        I3         in       D17
+         2        I2         in       D12
+         3        I1         in       D7
+         4        I0         in       D2
+         5        Y          out      OUTPUT2
+         6        Y'         out               *** unconnected ***
+         7        E'         in       GND
+         8        GND        in       GND
+         9        S2         in       SELECT3
+         10       S1         in       SELECT2
+         11       S0         in       SELECT1
+         12       I7         in       D37
+         13       I6         in       D32
+         14       I5         in       D27
+         15       I4         in       D22
+         16       VCC        in       5V
+
+M5       1        I3         in       D19
+         2        I2         in       D14
+         3        I1         in       D9
+         4        I0         in       D4
+         5        Y          out      OUTPUT4
+         6        Y'         out               *** unconnected ***
+         7        E'         in       GND
+         8        GND        in       GND
+         9        S2         in       SELECT3
+         10       S1         in       SELECT1
+         11       S0         in       SELECT1
+         12       I7         in       D39
+         13       I6         in       D34
+         14       I5         in       D29
+         15       I4         in       D24
+         16       VCC        in       5V
 
 OUTPUT   1        S          pas      OUTPUT1
          2        S          pas      OUTPUT2

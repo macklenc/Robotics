@@ -49,8 +49,8 @@
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="95" name="Names" color="7" fill="1" visible="no" active="yes"/>
-<layer number="96" name="Values" color="7" fill="1" visible="no" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
@@ -6732,8 +6732,8 @@ Based on the following sources:
 <attribute name="NAME" x="50.8" y="177.038" size="1.524" layer="95"/>
 </instance>
 <instance part="X40" gate="-2" x="48.26" y="175.26"/>
-<instance part="POWER" gate="-1" x="43.18" y="162.56" rot="R90"/>
-<instance part="POWER" gate="-2" x="45.72" y="162.56" rot="R90"/>
+<instance part="POWER" gate="-1" x="50.8" y="154.94" rot="R90"/>
+<instance part="POWER" gate="-2" x="53.34" y="154.94" rot="R90"/>
 <instance part="INPUT" gate="-1" x="33.02" y="172.72" rot="R90"/>
 <instance part="INPUT" gate="-2" x="35.56" y="172.72" rot="R90"/>
 <instance part="INPUT" gate="-3" x="38.1" y="172.72" rot="R90"/>
@@ -7088,11 +7088,9 @@ Based on the following sources:
 <wire x1="101.6" y1="137.16" x2="114.3" y2="137.16" width="0.1524" layer="91"/>
 <junction x="114.3" y="137.16"/>
 <pinref part="POWER" gate="-1" pin="S"/>
-<wire x1="43.18" y1="160.02" x2="43.18" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="157.48" x2="45.72" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="157.48" x2="45.72" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="137.16" x2="76.2" y2="137.16" width="0.1524" layer="91"/>
-<junction x="43.18" y="160.02"/>
+<wire x1="50.8" y1="152.4" x2="50.8" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="137.16" x2="76.2" y2="137.16" width="0.1524" layer="91"/>
+<junction x="50.8" y="152.4"/>
 </segment>
 </net>
 <net name="W9" class="0">
@@ -8214,12 +8212,11 @@ Based on the following sources:
 <junction x="99.06" y="132.08"/>
 <junction x="76.2" y="157.48"/>
 <pinref part="POWER" gate="-2" pin="S"/>
-<wire x1="45.72" y1="160.02" x2="48.26" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="160.02" x2="48.26" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="139.7" x2="73.66" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="152.4" x2="53.34" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="139.7" x2="73.66" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="139.7" x2="73.66" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="157.48" x2="76.2" y2="157.48" width="0.1524" layer="91"/>
-<junction x="45.72" y="160.02"/>
+<junction x="53.34" y="152.4"/>
 </segment>
 </net>
 <net name="D11" class="0">
@@ -9032,54 +9029,15 @@ Based on the following sources:
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,76.2,160.02,IC1P,VCC,5V,,,"/>
-<approved hash="104,1,81.28,160.02,IC2P,VCC,5V,,,"/>
-<approved hash="104,1,86.36,160.02,IC3P,VCC,5V,,,"/>
-<approved hash="104,1,91.44,160.02,IC4P,VCC,5V,,,"/>
-<approved hash="104,1,96.52,160.02,IC5P,VCC,5V,,,"/>
-<approved hash="104,1,101.6,160.02,IC6P,VCC,5V,,,"/>
+<approved hash="104,1,76.2,157.48,IC1P,VCC,5V,,,"/>
+<approved hash="104,1,81.28,157.48,IC2P,VCC,5V,,,"/>
+<approved hash="104,1,86.36,157.48,IC3P,VCC,5V,,,"/>
+<approved hash="104,1,91.44,157.48,IC4P,VCC,5V,,,"/>
+<approved hash="104,1,96.52,157.48,IC5P,VCC,5V,,,"/>
+<approved hash="104,1,101.6,157.48,IC6P,VCC,5V,,,"/>
 <approved hash="116,1,45.7835,27.94,IC7,E,I,,,"/>
 <approved hash="116,1,45.7835,27.94,IC7,F,I,,,"/>
-<approved hash="104,1,99.06,134.62,IC7P,VCC,5V,,,"/>
-<approved hash="111,1,231.14,165.1,W40,,,,,"/>
-<approved hash="111,1,228.6,165.1,W39,,,,,"/>
-<approved hash="111,1,226.06,165.1,W38,,,,,"/>
-<approved hash="111,1,223.52,165.1,W37,,,,,"/>
-<approved hash="111,1,220.98,165.1,W36,,,,,"/>
-<approved hash="111,1,218.44,165.1,W35,,,,,"/>
-<approved hash="111,1,215.9,165.1,W34,,,,,"/>
-<approved hash="111,1,213.36,165.1,W33,,,,,"/>
-<approved hash="111,1,210.82,165.1,W32,,,,,"/>
-<approved hash="111,1,208.28,165.1,W31,,,,,"/>
-<approved hash="111,1,205.74,165.1,W30,,,,,"/>
-<approved hash="111,1,203.2,165.1,W29,,,,,"/>
-<approved hash="111,1,200.66,165.1,W28,,,,,"/>
-<approved hash="111,1,198.12,165.1,W27,,,,,"/>
-<approved hash="111,1,195.58,165.1,W26,,,,,"/>
-<approved hash="111,1,193.04,165.1,W25,,,,,"/>
-<approved hash="111,1,190.5,165.1,W24,,,,,"/>
-<approved hash="111,1,187.96,165.1,W23,,,,,"/>
-<approved hash="111,1,185.42,165.1,W22,,,,,"/>
-<approved hash="111,1,182.88,165.1,W21,,,,,"/>
-<approved hash="111,1,180.34,165.1,W20,,,,,"/>
-<approved hash="111,1,177.8,165.1,W19,,,,,"/>
-<approved hash="111,1,175.26,165.1,W18,,,,,"/>
-<approved hash="111,1,172.72,165.1,W17,,,,,"/>
-<approved hash="111,1,170.18,165.1,W16,,,,,"/>
-<approved hash="111,1,167.64,165.1,W15,,,,,"/>
-<approved hash="111,1,165.1,165.1,W14,,,,,"/>
-<approved hash="111,1,162.56,165.1,W13,,,,,"/>
-<approved hash="111,1,160.02,165.1,W12,,,,,"/>
-<approved hash="111,1,157.48,165.1,W11,,,,,"/>
-<approved hash="111,1,154.94,165.1,W10,,,,,"/>
-<approved hash="111,1,152.4,165.1,W9,,,,,"/>
-<approved hash="111,1,149.86,165.1,W8,,,,,"/>
-<approved hash="111,1,147.32,165.1,W7,,,,,"/>
-<approved hash="111,1,144.78,165.1,W6,,,,,"/>
-<approved hash="111,1,142.24,165.1,W5,,,,,"/>
-<approved hash="111,1,139.7,165.1,W4,,,,,"/>
-<approved hash="111,1,137.16,165.1,W3,,,,,"/>
-<approved hash="111,1,134.62,165.1,W2,,,,,"/>
+<approved hash="104,1,99.06,132.08,IC7P,VCC,5V,,,"/>
 </errors>
 </schematic>
 </drawing>

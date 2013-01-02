@@ -1,12 +1,24 @@
 Netlist
 
-Exported from whisker_module_1.sch at 1/1/2013 5:15:27 PM
+Exported from whisker_module_1.sch at 1/1/2013 7:52:24 PM
 
 EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
 
 Net      Part     Pad      Pin        Sheet
 
-5V       POWER    2        S          1
+5V       IC1      14       VCC        1
+         IC2      14       VCC        1
+         IC3      14       VCC        1
+         IC4      14       VCC        1
+         IC5      14       VCC        1
+         IC6      14       VCC        1
+         IC7      14       VCC        1
+         M1       16       VCC        1
+         M2       16       VCC        1
+         M3       16       VCC        1
+         M4       16       VCC        1
+         M5       16       VCC        1
+         POWER    2        S          1
          R1       1        1          1
          R10      1        1          1
          R11      1        1          1
@@ -49,124 +61,124 @@ Net      Part     Pad      Pin        Sheet
          R9       1        1          1
 
 D1       IC1      12       O          1
-         IC8      1        D0         1
+         M1       4        I0         1
 
 D2       IC1      10       O          1
-         IC9      1        D0         1
+         M4       4        I0         1
 
 D3       IC1      8        O          1
-         IC10     1        D0         1
+         M2       4        I0         1
 
 D4       IC1      2        O          1
-         IC11     1        D0         1
+         M5       4        I0         1
 
 D5       IC1      4        O          1
-         IC12     1        D0         1
+         M3       4        I0         1
 
 D6       IC1      6        O          1
-         IC8      16       D1         1
+         M1       3        I1         1
 
 D7       IC2      12       O          1
-         IC9      16       D1         1
+         M4       3        I1         1
 
-D8       IC10     16       D1         1
-         IC2      10       O          1
+D8       IC2      10       O          1
+         M2       3        I1         1
 
-D9       IC11     16       D1         1
-         IC2      8        O          1
+D9       IC2      8        O          1
+         M5       3        I1         1
 
-D10      IC12     16       D1         1
-         IC2      2        O          1
+D10      IC2      2        O          1
+         M3       3        I1         1
 
 D11      IC2      4        O          1
-         IC8      15       D2         1
+         M1       2        I2         1
 
 D12      IC2      6        O          1
-         IC9      15       D2         1
+         M4       2        I2         1
 
-D13      IC10     15       D2         1
-         IC3      12       O          1
+D13      IC3      12       O          1
+         M2       2        I2         1
 
-D14      IC11     15       D2         1
-         IC3      10       O          1
+D14      IC3      10       O          1
+         M5       2        I2         1
 
-D15      IC12     15       D2         1
-         IC3      8        O          1
+D15      IC3      8        O          1
+         M3       2        I2         1
 
 D16      IC3      2        O          1
-         IC8      14       D3         1
+         M1       1        I3         1
 
 D17      IC3      4        O          1
-         IC9      14       D3         1
+         M4       1        I3         1
 
-D18      IC10     14       D3         1
-         IC3      6        O          1
+D18      IC3      6        O          1
+         M2       1        I3         1
 
-D19      IC11     14       D3         1
-         IC4      12       O          1
+D19      IC4      12       O          1
+         M5       1        I3         1
 
-D20      IC12     14       D3         1
-         IC4      10       O          1
+D20      IC4      10       O          1
+         M3       1        I3         1
 
 D21      IC4      8        O          1
-         IC8      13       D4         1
+         M1       15       I4         1
 
 D22      IC4      2        O          1
-         IC9      13       D4         1
+         M4       15       I4         1
 
-D23      IC10     13       D4         1
-         IC4      4        O          1
+D23      IC4      4        O          1
+         M2       15       I4         1
 
-D24      IC11     13       D4         1
-         IC4      6        O          1
+D24      IC4      6        O          1
+         M5       15       I4         1
 
-D25      IC12     13       D4         1
-         IC5      12       O          1
+D25      IC5      12       O          1
+         M3       15       I4         1
 
 D26      IC5      10       O          1
-         IC8      11       D5         1
+         M1       14       I5         1
 
 D27      IC5      8        O          1
-         IC9      11       D5         1
+         M4       14       I5         1
 
-D28      IC10     11       D5         1
-         IC5      2        O          1
+D28      IC5      2        O          1
+         M2       14       I5         1
 
-D29      IC11     11       D5         1
-         IC5      4        O          1
+D29      IC5      4        O          1
+         M5       14       I5         1
 
-D30      IC12     11       D5         1
-         IC5      6        O          1
+D30      IC5      6        O          1
+         M3       14       I5         1
 
 D31      IC6      12       O          1
-         IC8      10       D6         1
+         M1       13       I6         1
 
 D32      IC6      10       O          1
-         IC9      10       D6         1
+         M4       13       I6         1
 
-D33      IC10     10       D6         1
-         IC6      8        O          1
+D33      IC6      8        O          1
+         M2       13       I6         1
 
-D34      IC11     10       D6         1
-         IC6      2        O          1
+D34      IC6      2        O          1
+         M5       13       I6         1
 
-D35      IC12     10       D6         1
-         IC6      4        O          1
+D35      IC6      4        O          1
+         M3       13       I6         1
 
 D36      IC6      6        O          1
-         IC8      9        D7         1
+         M1       12       I7         1
 
 D37      IC7      12       O          1
-         IC9      9        D7         1
+         M4       12       I7         1
 
-D38      IC10     9        D7         1
-         IC7      10       O          1
+D38      IC7      10       O          1
+         M2       12       I7         1
 
-D39      IC11     9        D7         1
-         IC7      8        O          1
+D39      IC7      8        O          1
+         M5       12       I7         1
 
-D40      IC12     9        D7         1
-         IC7      2        O          1
+D40      IC7      2        O          1
+         M3       12       I7         1
 
 GND      C1       2        2          1
          C10      2        2          1
@@ -208,23 +220,23 @@ GND      C1       2        2          1
          C7       2        2          1
          C8       2        2          1
          C9       2        2          1
-         IC1      7        GND        * none *
-         IC10     2        G          1
-         IC10     4        GND        * none *
-         IC11     2        G          1
-         IC11     4        GND        * none *
-         IC12     2        G          1
-         IC12     4        GND        * none *
-         IC2      7        GND        * none *
-         IC3      7        GND        * none *
-         IC4      7        GND        * none *
-         IC5      7        GND        * none *
-         IC6      7        GND        * none *
-         IC7      7        GND        * none *
-         IC8      2        G          1
-         IC8      4        GND        * none *
-         IC9      2        G          1
-         IC9      4        GND        * none *
+         IC1      7        GND        1
+         IC2      7        GND        1
+         IC3      7        GND        1
+         IC4      7        GND        1
+         IC5      7        GND        1
+         IC6      7        GND        1
+         IC7      7        GND        1
+         M1       7        E'         1
+         M1       8        GND        1
+         M2       7        E'         1
+         M2       8        GND        1
+         M3       7        E'         1
+         M3       8        GND        1
+         M4       7        E'         1
+         M4       8        GND        1
+         M5       7        E'         1
+         M5       8        GND        1
          POWER    1        S          1
          X1       1        S          1
          X10      1        S          1
@@ -267,41 +279,41 @@ GND      C1       2        2          1
          X8       1        S          1
          X9       1        S          1
 
-OUTPUT1  IC8      3        Y          1
+OUTPUT1  M1       5        Y          1
          OUTPUT   1        S          1
 
-OUTPUT2  IC9      3        Y          1
+OUTPUT2  M4       5        Y          1
          OUTPUT   2        S          1
 
-OUTPUT3  IC10     3        Y          1
+OUTPUT3  M2       5        Y          1
          OUTPUT   3        S          1
 
-OUTPUT4  IC11     3        Y          1
+OUTPUT4  M5       5        Y          1
          OUTPUT   4        S          1
 
-OUTPUT5  IC12     3        Y          1
+OUTPUT5  M3       5        Y          1
          OUTPUT   5        S          1
 
-SELECT1  IC10     6        A          1
-         IC11     6        A          1
-         IC11     7        B          1
-         IC12     6        A          1
-         IC8      6        A          1
-         IC9      6        A          1
-         INPUT    1        S          1
+SELECT1  INPUT    1        S          1
+         M1       11       S0         1
+         M2       11       S0         1
+         M3       11       S0         1
+         M4       11       S0         1
+         M5       10       S1         1
+         M5       11       S0         1
 
-SELECT2  IC10     7        B          1
-         IC12     7        B          1
-         IC12     8        C          1
-         IC8      7        B          1
-         IC9      7        B          1
-         INPUT    2        S          1
+SELECT2  INPUT    2        S          1
+         M1       10       S1         1
+         M2       10       S1         1
+         M3       10       S1         1
+         M3       9        S2         1
+         M4       10       S1         1
 
-SELECT3  IC10     8        C          1
-         IC11     8        C          1
-         IC8      8        C          1
-         IC9      8        C          1
-         INPUT    3        S          1
+SELECT3  INPUT    3        S          1
+         M1       9        S2         1
+         M2       9        S2         1
+         M4       9        S2         1
+         M5       9        S2         1
 
 W1       C6       1        1          1
          IC1      13       I          1
