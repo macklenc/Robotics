@@ -1,0 +1,90 @@
+Pinlist
+
+Exported from untitled.sch at 1/2/2013 9:58:23 PM
+
+EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
+
+Part     Pad      Pin        Dir      Net
+
+C6       +        +          pas      5V
+         -        -          pas      GND
+
+C7       1        1          pas      5V
+         2        2          pas      GND
+
+C8       +        +          pas      3V
+         -        -          pas      GND
+
+C9       1        1          pas      3V
+         2        2          pas      GND
+
+CONTROL  1        S          pas      SDA
+         2        S          pas      SCL
+         3        S          pas      EN-5V
+         4        S          pas      EN-3V
+         5        S          pas      EN-GND
+
+MODULE1  1        S          pas      SDA
+         2        S          pas      5V
+         3        S          pas      GND
+         4        S          pas      3V
+         5        S          pas      SCL
+
+MODULE2  1        S          pas      SDA
+         2        S          pas      5V
+         3        S          pas      GND
+         4        S          pas      3V
+         5        S          pas      SCL
+
+MODULE3  1        S          pas      SDA
+         2        S          pas      5V
+         3        S          pas      GND
+         4        S          pas      3V
+         5        S          pas      SCL
+
+MODULE4  1        S          pas      SDA
+         2        S          pas      5V
+         3        S          pas      GND
+         4        S          pas      3V
+         5        S          pas      SCL
+
+MODULE5  1        S          pas      SDA
+         2        S          pas      5V
+         3        S          pas      GND
+         4        S          pas      3V
+         5        S          pas      SCL
+
+MODULE6  1        S          pas      SDA
+         2        S          pas      5V
+         3        S          pas      GND
+         4        S          pas      3V
+         5        S          pas      SCL
+
+MODULE7  1        S          pas      SDA
+         2        S          pas      5V
+         3        S          pas      GND
+         4        S          pas      3V
+         5        S          pas      SCL
+
+MODULE8  1        S          pas      SDA
+         2        S          pas      5V
+         3        S          pas      GND
+         4        S          pas      3V
+         5        S          pas      SCL
+
+T5       1        C          pas      UF-5V
+         2        B          pas      EN-5V
+         3        E          pas      5V
+
+T6       1        C          pas      UF-3V
+         2        B          pas      EN-3V
+         3        E          pas      3V
+
+T7       1        C          pas      UF-GND
+         2        B          pas      EN-GND
+         3        E          pas      GND
+
+X1       1        S          pas      UF-GND
+         2        S          pas      UF-3V
+         3        S          pas      UF-5V
+
