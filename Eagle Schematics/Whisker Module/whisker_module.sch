@@ -16441,18 +16441,21 @@ Based on the following sources:
 <segment>
 <wire x1="50.8" y1="142.24" x2="50.8" y2="127" width="0.762" layer="92"/>
 <wire x1="50.8" y1="127" x2="101.6" y2="127" width="0.762" layer="92"/>
+<label x="104.14" y="127" size="1.778" layer="95"/>
 </segment>
 </bus>
 <bus name="RESULT[1..5]">
 <segment>
 <wire x1="101.6" y1="124.46" x2="53.34" y2="124.46" width="0.762" layer="92"/>
 <wire x1="53.34" y1="124.46" x2="53.34" y2="160.02" width="0.762" layer="92"/>
+<label x="104.14" y="121.92" size="1.778" layer="95"/>
 </segment>
 </bus>
 <bus name="OPTION[1..5]">
 <segment>
 <wire x1="96.52" y1="162.56" x2="96.52" y2="142.24" width="0.762" layer="92"/>
 <wire x1="96.52" y1="142.24" x2="152.4" y2="142.24" width="0.762" layer="92"/>
+<label x="121.92" y="139.7" size="1.778" layer="95"/>
 </segment>
 </bus>
 </busses>
@@ -16891,6 +16894,7 @@ Based on the following sources:
 <wire x1="96.52" y1="162.56" x2="88.9" y2="162.56" width="0.1524" layer="91"/>
 <junction x="88.9" y="162.56"/>
 <junction x="96.52" y="162.56"/>
+<label x="88.9" y="162.56" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="OPTION" gate="-1" pin="S"/>
@@ -16905,6 +16909,7 @@ Based on the following sources:
 <wire x1="96.52" y1="160.02" x2="88.9" y2="160.02" width="0.1524" layer="91"/>
 <junction x="88.9" y="160.02"/>
 <junction x="96.52" y="160.02"/>
+<label x="88.9" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="OPTION" gate="-2" pin="S"/>
@@ -16919,6 +16924,7 @@ Based on the following sources:
 <wire x1="96.52" y1="157.48" x2="88.9" y2="157.48" width="0.1524" layer="91"/>
 <junction x="88.9" y="157.48"/>
 <junction x="96.52" y="157.48"/>
+<label x="88.9" y="157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="OPTION" gate="-3" pin="S"/>
@@ -16933,6 +16939,7 @@ Based on the following sources:
 <wire x1="96.52" y1="154.94" x2="88.9" y2="154.94" width="0.1524" layer="91"/>
 <junction x="88.9" y="154.94"/>
 <junction x="96.52" y="154.94"/>
+<label x="88.9" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="OPTION" gate="-4" pin="S"/>
@@ -16947,6 +16954,7 @@ Based on the following sources:
 <wire x1="96.52" y1="142.24" x2="88.9" y2="142.24" width="0.1524" layer="91"/>
 <junction x="88.9" y="142.24"/>
 <junction x="96.52" y="142.24"/>
+<label x="88.9" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="OPTION" gate="-5" pin="S"/>
@@ -16961,6 +16969,7 @@ Based on the following sources:
 <wire x1="53.34" y1="160.02" x2="73.66" y2="160.02" width="0.1524" layer="91"/>
 <junction x="53.34" y="160.02"/>
 <junction x="73.66" y="160.02"/>
+<label x="58.42" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESULT2" class="0">
@@ -16969,6 +16978,7 @@ Based on the following sources:
 <wire x1="53.34" y1="157.48" x2="73.66" y2="157.48" width="0.1524" layer="91"/>
 <junction x="53.34" y="157.48"/>
 <junction x="73.66" y="157.48"/>
+<label x="58.42" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESULT3" class="0">
@@ -16977,6 +16987,7 @@ Based on the following sources:
 <wire x1="53.34" y1="154.94" x2="73.66" y2="154.94" width="0.1524" layer="91"/>
 <junction x="53.34" y="154.94"/>
 <junction x="73.66" y="154.94"/>
+<label x="58.42" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESULT4" class="0">
@@ -16985,6 +16996,7 @@ Based on the following sources:
 <wire x1="53.34" y1="137.16" x2="73.66" y2="137.16" width="0.1524" layer="91"/>
 <junction x="53.34" y="137.16"/>
 <junction x="73.66" y="137.16"/>
+<label x="58.42" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESULT5" class="0">
@@ -16993,6 +17005,7 @@ Based on the following sources:
 <wire x1="53.34" y1="134.62" x2="73.66" y2="134.62" width="0.1524" layer="91"/>
 <junction x="53.34" y="134.62"/>
 <junction x="73.66" y="134.62"/>
+<label x="58.42" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SELECT1" class="0">
@@ -17001,6 +17014,7 @@ Based on the following sources:
 <wire x1="50.8" y1="142.24" x2="73.66" y2="142.24" width="0.1524" layer="91"/>
 <junction x="50.8" y="142.24"/>
 <junction x="73.66" y="142.24"/>
+<label x="58.42" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SELECT2" class="0">
@@ -17009,6 +17023,7 @@ Based on the following sources:
 <wire x1="50.8" y1="139.7" x2="73.66" y2="139.7" width="0.1524" layer="91"/>
 <junction x="50.8" y="139.7"/>
 <junction x="73.66" y="139.7"/>
+<label x="58.42" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SELECT3" class="0">
@@ -17018,6 +17033,7 @@ Based on the following sources:
 <wire x1="96.52" y1="134.62" x2="88.9" y2="134.62" width="0.1524" layer="91"/>
 <junction x="88.9" y="134.62"/>
 <junction x="96.52" y="127"/>
+<label x="88.9" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SELECT4" class="0">
@@ -17027,6 +17043,7 @@ Based on the following sources:
 <wire x1="99.06" y1="137.16" x2="88.9" y2="137.16" width="0.1524" layer="91"/>
 <junction x="88.9" y="137.16"/>
 <junction x="99.06" y="127"/>
+<label x="88.9" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SELECT5" class="0">
@@ -17036,6 +17053,7 @@ Based on the following sources:
 <wire x1="101.6" y1="139.7" x2="88.9" y2="139.7" width="0.1524" layer="91"/>
 <junction x="88.9" y="139.7"/>
 <junction x="101.6" y="127"/>
+<label x="88.9" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
