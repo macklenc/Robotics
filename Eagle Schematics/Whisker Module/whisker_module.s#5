@@ -20094,6 +20094,7 @@ Based on the following sources:
 <wire x1="195.58" y1="144.78" x2="198.12" y2="144.78" width="0.1524" layer="91"/>
 <junction x="195.58" y="144.78"/>
 <wire x1="198.12" y1="165.1" x2="198.12" y2="144.78" width="0.1524" layer="91"/>
+<label x="198.12" y="152.4" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="W32" class="0">
@@ -20102,6 +20103,7 @@ Based on the following sources:
 <wire x1="200.66" y1="144.78" x2="203.2" y2="144.78" width="0.1524" layer="91"/>
 <junction x="200.66" y="144.78"/>
 <wire x1="203.2" y1="165.1" x2="203.2" y2="144.78" width="0.1524" layer="91"/>
+<label x="203.2" y="152.4" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="W33" class="0">
@@ -20110,6 +20112,7 @@ Based on the following sources:
 <wire x1="205.74" y1="144.78" x2="208.28" y2="144.78" width="0.1524" layer="91"/>
 <junction x="205.74" y="144.78"/>
 <wire x1="208.28" y1="165.1" x2="208.28" y2="144.78" width="0.1524" layer="91"/>
+<label x="208.28" y="152.4" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="W34" class="0">
@@ -20118,6 +20121,7 @@ Based on the following sources:
 <wire x1="210.82" y1="144.78" x2="213.36" y2="144.78" width="0.1524" layer="91"/>
 <junction x="210.82" y="144.78"/>
 <wire x1="213.36" y1="165.1" x2="213.36" y2="144.78" width="0.1524" layer="91"/>
+<label x="213.36" y="152.4" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="W35" class="0">
@@ -20126,6 +20130,7 @@ Based on the following sources:
 <wire x1="215.9" y1="144.78" x2="218.44" y2="144.78" width="0.1524" layer="91"/>
 <junction x="215.9" y="144.78"/>
 <wire x1="218.44" y1="165.1" x2="218.44" y2="144.78" width="0.1524" layer="91"/>
+<label x="218.44" y="152.4" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="W36" class="0">
@@ -20134,6 +20139,7 @@ Based on the following sources:
 <wire x1="220.98" y1="144.78" x2="223.52" y2="144.78" width="0.1524" layer="91"/>
 <junction x="220.98" y="144.78"/>
 <wire x1="223.52" y1="165.1" x2="223.52" y2="144.78" width="0.1524" layer="91"/>
+<label x="223.52" y="152.4" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="W37" class="0">
@@ -20142,6 +20148,7 @@ Based on the following sources:
 <wire x1="226.06" y1="144.78" x2="228.6" y2="144.78" width="0.1524" layer="91"/>
 <junction x="226.06" y="144.78"/>
 <wire x1="228.6" y1="165.1" x2="228.6" y2="144.78" width="0.1524" layer="91"/>
+<label x="228.6" y="152.4" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="W38" class="0">
@@ -20150,6 +20157,7 @@ Based on the following sources:
 <wire x1="231.14" y1="144.78" x2="233.68" y2="144.78" width="0.1524" layer="91"/>
 <junction x="231.14" y="144.78"/>
 <wire x1="233.68" y1="165.1" x2="233.68" y2="144.78" width="0.1524" layer="91"/>
+<label x="233.68" y="152.4" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="W39" class="0">
@@ -20158,6 +20166,7 @@ Based on the following sources:
 <pinref part="T44" gate="G$1" pin="E"/>
 <wire x1="236.22" y1="144.78" x2="238.76" y2="144.78" width="0.1524" layer="91"/>
 <junction x="236.22" y="144.78"/>
+<label x="238.76" y="152.4" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="W40" class="0">
@@ -20166,6 +20175,7 @@ Based on the following sources:
 <wire x1="241.3" y1="144.78" x2="243.84" y2="144.78" width="0.1524" layer="91"/>
 <junction x="241.3" y="144.78"/>
 <wire x1="243.84" y1="165.1" x2="243.84" y2="144.78" width="0.1524" layer="91"/>
+<label x="243.84" y="152.4" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
