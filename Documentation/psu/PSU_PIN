@@ -1,0 +1,111 @@
+Pinlist
+
+Exported from psu.sch at 1/4/2013 6:43:40 PM
+
+EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
+
+Part     Pad      Pin        Dir      Net
+
+BEAGLEBONE 1        1          pas      GND
+         2        2          pas      BB-POWER
+
+C1       1        1          pas      VCC
+         2        2          pas      GND
+
+C2       1        1          pas      5V
+         2        2          pas      GND
+
+C3       1        1          pas      3.3V
+         2        2          pas      GND
+
+C4       +        +          pas      VCC
+         -        -          pas      GND
+
+C5       +        +          pas      12V
+         -        -          pas      GND
+
+C7       1        1          pas      VCC
+         2        2          pas      GND
+
+C8       1        1          pas      5V
+         2        2          pas      GND
+
+C9       +        +          pas      12V1
+         -        -          pas      GND
+
+C16      1        1          pas      5-1A,1
+         2        2          pas      GND
+
+C17      1        1          pas      5V-1A,2
+         2        2          pas      GND
+
+D1       A        A          pas      GND-IC3
+         C        C          pas      GND
+
+D2       A        A          pas      12V
+         C        C          pas      EM-POWER
+
+D3       A        A          pas      GND-IC1
+         C        C          pas      GND
+
+D4       A        A          pas      12V1
+         C        C          pas      KINECT-POWER
+
+D8       A        A          pas      GND-IC1,10
+         C        C          pas      GND
+
+D9       A        A          pas      5-1A,1
+         C        C          pas      BB-POWER
+
+D10      A        A          pas      5V-1A,2
+         C        C          pas      BB-POWER
+
+EM       1        1          pas      GND
+         2        2          pas      N$3
+
+EM1      1        1          pas      GND
+         2        2          pas      KINECT-POWER
+
+F1       1        1          pas      EM-POWER
+         2        2          pas      N$3
+
+F5       1        1          pas      VCC
+         2        2          pas      N$2
+
+IC1      1        VI         in       VCC
+         2        GND        pas      GND-IC1,10
+         3        VO         pas      5-1A,1
+
+IC2      1        VI         in       VCC
+         2        GND        pas      GND
+         3        VO         pas      5V
+
+IC3      1        VI         in       VCC
+         2        GND        pas      GND-IC3
+         3        VO         pas      12V
+
+IC4      1        ADJ        in       GND
+         2        OUT        pas      3.3V
+         3        IN         in       5V
+
+IC5      1        VI         in       VCC1
+         2        GND        pas      GND-IC1
+         3        VO         pas      12V1
+
+IC10     1        VI         in       VCC
+         2        GND        pas      GND-IC1,10
+         3        VO         pas      5V-1A,2
+
+MOTORS   1        1          pas      GND
+         2        2          pas      N$2
+
+MOTORS1  1        1          pas      GND
+         2        2          pas      N$2
+
+POWER    1        1          pas      GND
+         2        2          pas      VCC
+
+UPCB-POWER 1        S          pas      GND
+         2        S          pas      3.3V
+         3        S          pas      5V
+
