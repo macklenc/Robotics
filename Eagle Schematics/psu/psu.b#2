@@ -1679,16 +1679,9 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="-157.48" y="-283.21" size="1.778" layer="27" display="off"/>
 </element>
 <element name="IC5" library="linear" package="TO220H" value="7812T" x="-152.4" y="-297.18"/>
-<element name="C6" library="rcl" package="E2,5-6E" value="47000uF" x="-143.51" y="-321.31"/>
 <element name="D3" library="diode" package="DO41-10" value="1N4007" x="-153.67" y="-313.69"/>
 <element name="C9" library="rcl" package="E2,5-6E" value="4700uF" x="-156.21" y="-328.93"/>
 <element name="D4" library="diode" package="DO41-10" value="1N4007" x="-140.97" y="-313.69"/>
-<element name="F2" library="fuse" package="PICOFUSE" value="FUSE 1A" x="-153.67" y="-321.31">
-<attribute name="OC_NEWARK" value="unknown" x="-170.18" y="-322.58" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="-170.18" y="-322.58" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="-170.18" y="-322.58" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="-170.18" y="-322.58" size="1.778" layer="27" display="off"/>
-</element>
 <element name="EM1" library="con-amp-quick" package="02P" value="" x="-140.97" y="-293.37">
 <attribute name="OC_NEWARK" value="unknown" x="-182.88" y="-321.31" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="-182.88" y="-321.31" size="1.778" layer="27" display="off"/>
@@ -1754,11 +1747,9 @@ design rules under a new name.</description>
 <contactref element="EM" pad="1"/>
 <contactref element="MOTORS1" pad="1"/>
 <contactref element="POWER" pad="1"/>
-<contactref element="C6" pad="-"/>
 <contactref element="D3" pad="C"/>
 <contactref element="C9" pad="-"/>
 <contactref element="EM1" pad="1"/>
-<wire x1="-142.24" y1="-321.31" x2="-154.94" y2="-328.93" width="0" layer="19" extent="1-1"/>
 <wire x1="-158.75" y1="-313.69" x2="-154.94" y2="-328.93" width="0" layer="19" extent="1-1"/>
 <wire x1="-142.24" y1="-293.37" x2="-158.75" y2="-313.69" width="0" layer="19" extent="1-1"/>
 <wire x1="-140.97" y1="-283.21" x2="-142.24" y2="-293.37" width="0" layer="19" extent="1-1"/>
@@ -1865,9 +1856,7 @@ design rules under a new name.</description>
 <wire x1="-104.14" y1="-254" x2="-129.54" y2="-283.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC1">
-<contactref element="C6" pad="+"/>
 <contactref element="IC5" pad="1"/>
-<wire x1="-154.94" y1="-307.34" x2="-144.78" y2="-321.31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="12V1">
 <contactref element="IC5" pad="3"/>
@@ -1881,15 +1870,10 @@ design rules under a new name.</description>
 <contactref element="D3" pad="A"/>
 <wire x1="-148.59" y1="-313.69" x2="-152.4" y2="-307.34" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$1">
-<contactref element="F2" pad="2"/>
-<contactref element="EM1" pad="2"/>
-<wire x1="-139.7" y1="-293.37" x2="-148.59" y2="-321.31" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="KINECT-POWER">
 <contactref element="D4" pad="C"/>
-<contactref element="F2" pad="1"/>
-<wire x1="-146.05" y1="-313.69" x2="-158.75" y2="-321.31" width="0" layer="19" extent="1-1"/>
+<contactref element="EM1" pad="2"/>
+<wire x1="-139.7" y1="-293.37" x2="-146.05" y2="-313.69" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

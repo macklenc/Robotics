@@ -12217,7 +12217,7 @@ Wickmann</description>
 <part name="D3" library="diode" deviceset="1N4004" device="" value="1N4007"/>
 <part name="C9" library="rcl" deviceset="CPOL-US" device="E2,5-6E" value="4700uF"/>
 <part name="D4" library="diode" deviceset="1N4004" device="" value="1N4007"/>
-<part name="EM1" library="con-amp-quick" deviceset="M02" device=""/>
+<part name="KINECT" library="con-amp-quick" deviceset="M02" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12270,7 +12270,7 @@ Wickmann</description>
 <instance part="D3" gate="1" x="27.94" y="10.16" rot="R270"/>
 <instance part="C9" gate="G$1" x="43.18" y="12.7"/>
 <instance part="D4" gate="1" x="50.8" y="25.4"/>
-<instance part="EM1" gate="G$1" x="119.38" y="25.4" rot="R180"/>
+<instance part="KINECT" gate="G$1" x="119.38" y="25.4" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -12390,7 +12390,7 @@ Wickmann</description>
 <label x="63.5" y="22.86" size="1.778" layer="95"/>
 <wire x1="60.96" y1="22.86" x2="104.14" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="22.86" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="EM1" gate="G$1" pin="1"/>
+<pinref part="KINECT" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="25.4" x2="111.76" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="40.64" x2="2.54" y2="2.54" width="0.1524" layer="91"/>
 <junction x="2.54" y="40.64"/>
@@ -12594,7 +12594,7 @@ Wickmann</description>
 <wire x1="101.6" y1="25.4" x2="101.6" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="20.32" x2="106.68" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="20.32" x2="106.68" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="EM1" gate="G$1" pin="2"/>
+<pinref part="KINECT" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="22.86" x2="111.76" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>

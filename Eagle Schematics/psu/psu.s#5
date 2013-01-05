@@ -12199,12 +12199,6 @@ Wickmann</description>
 <attribute name="OC_FARNELL" value="unknown"/>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
-<part name="F3" library="fuse" deviceset="FUSE" device="PICOFUSE" value="FUSE 1A">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
-<attribute name="OC_NEWARK" value="unknown"/>
-</part>
 <part name="F4" library="fuse" deviceset="FUSE" device="PICOFUSE" value="FUSE 2A">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
@@ -12260,7 +12254,7 @@ Wickmann</description>
 <instance part="IC4" gate="G$1" x="170.18" y="175.26"/>
 <instance part="IC3" gate="A1" x="27.94" y="63.5"/>
 <instance part="C7" gate="G$1" x="101.6" y="172.72"/>
-<instance part="C8" gate="G$1" x="142.24" y="172.72"/>
+<instance part="C8" gate="G$1" x="154.94" y="172.72"/>
 <instance part="C4" gate="G$1" x="10.16" y="50.8"/>
 <instance part="D1" gate="1" x="27.94" y="48.26" rot="R270"/>
 <instance part="C5" gate="G$1" x="43.18" y="50.8"/>
@@ -12274,8 +12268,7 @@ Wickmann</description>
 <instance part="D10" gate="1" x="111.76" y="132.08" rot="R90"/>
 <instance part="C1" gate="G$1" x="7.62" y="81.28" rot="R270"/>
 <instance part="F1" gate="G$1" x="83.82" y="63.5"/>
-<instance part="F2" gate="G$1" x="198.12" y="127"/>
-<instance part="F3" gate="G$1" x="198.12" y="124.46"/>
+<instance part="F2" gate="G$1" x="139.7" y="175.26"/>
 <instance part="F4" gate="G$1" x="147.32" y="111.76"/>
 <instance part="F5" gate="G$1" x="83.82" y="91.44"/>
 <instance part="MOTORS" gate="G$1" x="119.38" y="93.98" rot="R180"/>
@@ -12408,12 +12401,12 @@ Wickmann</description>
 <wire x1="25.4" y1="137.16" x2="25.4" y2="127" width="0.1524" layer="91"/>
 <label x="27.94" y="162.56" size="1.778" layer="95" rot="R90"/>
 <pinref part="IC4" gate="G$1" pin="ADJ"/>
-<wire x1="142.24" y1="167.64" x2="170.18" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="167.64" x2="170.18" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="2"/>
-<junction x="142.24" y="167.64"/>
+<junction x="154.94" y="167.64"/>
 <pinref part="IC2" gate="A1" pin="GND"/>
 <junction x="121.92" y="167.64"/>
-<wire x1="121.92" y1="167.64" x2="142.24" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="167.64" x2="154.94" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="167.64" x2="121.92" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="27.94" y1="167.64" x2="101.6" y2="167.64" width="0.1524" layer="91"/>
@@ -12433,20 +12426,23 @@ Wickmann</description>
 </net>
 <net name="5V" class="0">
 <segment>
-<pinref part="IC2" gate="A1" pin="VO"/>
-<wire x1="132.08" y1="175.26" x2="142.24" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="175.26" x2="162.56" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="175.26" x2="132.08" y2="154.94" width="0.1524" layer="91"/>
-<junction x="132.08" y="175.26"/>
+<wire x1="147.32" y1="175.26" x2="154.94" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="175.26" x2="162.56" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="175.26" x2="147.32" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="154.94" x2="139.7" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <junction x="132.08" y="154.94"/>
 <wire x1="132.08" y1="154.94" x2="139.7" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="154.94" x2="139.7" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="G$1" pin="IN"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<junction x="142.24" y="175.26"/>
-<pinref part="F3" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="124.46" x2="193.04" y2="124.46" width="0.1524" layer="91"/>
+<junction x="154.94" y="175.26"/>
+<wire x1="139.7" y1="124.46" x2="203.2" y2="124.46" width="0.1524" layer="91"/>
+<junction x="139.7" y="154.94"/>
+<pinref part="UPCB-POWER" gate="-3" pin="S"/>
+<pinref part="F2" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="175.26" x2="147.32" y2="175.26" width="0.1524" layer="91"/>
+<junction x="147.32" y="175.26"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -12454,11 +12450,12 @@ Wickmann</description>
 <wire x1="177.8" y1="175.26" x2="177.8" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="154.94" x2="185.42" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="154.94" x2="193.04" y2="154.94" width="0.1524" layer="91"/>
-<junction x="185.42" y="154.94"/>
-<wire x1="193.04" y1="154.94" x2="193.04" y2="127" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="G$1" pin="OUT"/>
-<pinref part="F2" gate="G$1" pin="1"/>
+<wire x1="185.42" y1="154.94" x2="195.58" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="154.94" x2="195.58" y2="127" width="0.1524" layer="91"/>
+<junction x="185.42" y="154.94"/>
+<pinref part="UPCB-POWER" gate="-2" pin="S"/>
+<wire x1="195.58" y1="127" x2="203.2" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="12V" class="0">
@@ -12533,20 +12530,6 @@ Wickmann</description>
 <pinref part="F1" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="3.3V-FUSED" class="0">
-<segment>
-<pinref part="UPCB-POWER" gate="-2" pin="S"/>
-<pinref part="F2" gate="G$1" pin="2"/>
-<junction x="203.2" y="127"/>
-</segment>
-</net>
-<net name="5V-FUSED" class="0">
-<segment>
-<pinref part="UPCB-POWER" gate="-3" pin="S"/>
-<pinref part="F3" gate="G$1" pin="2"/>
-<junction x="203.2" y="124.46"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="F4" gate="G$1" pin="2"/>
@@ -12579,6 +12562,13 @@ Wickmann</description>
 <wire x1="106.68" y1="58.42" x2="106.68" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="EM" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="60.96" x2="111.76" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="IC2" gate="A1" pin="VO"/>
+<pinref part="F2" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="175.26" x2="134.62" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

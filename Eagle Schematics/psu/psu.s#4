@@ -12283,7 +12283,7 @@ Wickmann</description>
 <net name="VCC" class="0">
 <segment>
 <label x="20.32" y="162.56" size="1.778" layer="95" rot="R90"/>
-<wire x1="20.32" y1="175.26" x2="63.5" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="175.26" x2="101.6" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="175.26" x2="20.32" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="142.24" x2="20.32" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="142.24" x2="33.02" y2="142.24" width="0.1524" layer="91"/>
@@ -12311,13 +12311,9 @@ Wickmann</description>
 <junction x="33.02" y="127"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <pinref part="IC2" gate="A1" pin="VI"/>
-<wire x1="111.76" y1="180.34" x2="111.76" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="180.34" x2="101.6" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="180.34" x2="111.76" y2="180.34" width="0.1524" layer="91"/>
-<junction x="101.6" y="180.34"/>
-<wire x1="101.6" y1="180.34" x2="101.6" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="175.26" x2="111.76" y2="175.26" width="0.1524" layer="91"/>
 <junction x="101.6" y="175.26"/>
-<wire x1="63.5" y1="175.26" x2="63.5" y2="180.34" width="0.1524" layer="91"/>
+<junction x="101.6" y="175.26"/>
 <wire x1="10.16" y1="91.44" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
 <junction x="10.16" y="91.44"/>
 <label x="55.88" y="91.44" size="1.778" layer="95"/>

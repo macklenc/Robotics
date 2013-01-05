@@ -12186,7 +12186,6 @@ Wickmann</description>
 <part name="D2" library="diode" deviceset="1N4004" device="" value="1N4007"/>
 <part name="IC10" library="linear" deviceset="78*" device="T" technology="05"/>
 <part name="D8" library="diode" deviceset="1N4004" device="" value="1N4007"/>
-<part name="C15" library="rcl" deviceset="C-US" device="025-025X050" value="0.33uF"/>
 <part name="C16" library="rcl" deviceset="C-US" device="025-025X050" value="0.1uF"/>
 <part name="C17" library="rcl" deviceset="C-US" device="025-025X050" value="0.1uF"/>
 <part name="D9" library="diode" deviceset="1N4004" device="" value="1N4007"/>
@@ -12255,7 +12254,6 @@ Wickmann</description>
 <instance part="D2" gate="1" x="50.8" y="63.5"/>
 <instance part="IC10" gate="A1" x="96.52" y="127"/>
 <instance part="D8" gate="1" x="78.74" y="114.3" rot="R270"/>
-<instance part="C15" gate="G$1" x="48.26" y="124.46"/>
 <instance part="C16" gate="G$1" x="78.74" y="124.46"/>
 <instance part="C17" gate="G$1" x="111.76" y="124.46"/>
 <instance part="D9" gate="1" x="78.74" y="132.08" rot="R90"/>
@@ -12293,7 +12291,6 @@ Wickmann</description>
 <wire x1="33.02" y1="127" x2="33.02" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="111.76" x2="10.16" y2="111.76" width="0.1524" layer="91"/>
 <junction x="10.16" y="63.5"/>
-<pinref part="C15" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="A1" pin="VI"/>
 <wire x1="10.16" y1="111.76" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="91.44" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
@@ -12340,8 +12337,7 @@ Wickmann</description>
 <junction x="27.94" y="40.64"/>
 <wire x1="2.54" y1="40.64" x2="10.16" y2="40.64" width="0.1524" layer="91"/>
 <junction x="10.16" y="40.64"/>
-<wire x1="30.48" y1="114.3" x2="48.26" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="114.3" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
 <junction x="30.48" y="114.3"/>
 <pinref part="C17" gate="G$1" pin="2"/>
@@ -12356,9 +12352,6 @@ Wickmann</description>
 <wire x1="78.74" y1="119.38" x2="83.82" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="119.38" x2="83.82" y2="109.22" width="0.1524" layer="91"/>
 <junction x="83.82" y="109.22"/>
-<pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="119.38" x2="48.26" y2="114.3" width="0.1524" layer="91"/>
-<junction x="48.26" y="114.3"/>
 <wire x1="111.76" y1="109.22" x2="165.1" y2="109.22" width="0.1524" layer="91"/>
 <junction x="111.76" y="109.22"/>
 <label x="129.54" y="109.22" size="1.778" layer="95"/>
