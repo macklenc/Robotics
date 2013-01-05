@@ -1,0 +1,150 @@
+Pinlist
+
+Exported from entity_module.sch at 1/4/2013 10:04:04 PM
+
+EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
+
+Part     Pad      Pin        Dir      Net
+
+ATMEGA   1        1          pas      RST-2
+         2        2          pas      TX-RX
+         3        3          pas      RX-TX
+         4        4          pas      OPTION6
+         5        5          pas      N$1
+         6        6          pas      OPTION7
+         7        7          pas      5V
+         8        8          pas      GND
+         9        9          pas      CLK-1
+         10       10         pas      CLK-2
+         11       11         pas      OPTION8
+         12       12         pas      OPTION9
+         13       13         pas      OPTION10
+         14       14         pas      OPTION11
+         15       15         pas      OPTION12
+         16       16         pas      OPTION13
+         17       17         pas      OPTION14
+         18       18         pas      OPTION5
+         19       19         pas      LEDNET-1
+         20       20         pas      5V
+         21       21         pas      5V
+         22       22         pas      GND
+         23       23         pas      OPTION4
+         24       24         pas      OPTION3
+         25       25         pas      OPTION2
+         26       26         pas      OPTION1
+         27       27         pas      SDA-5V
+         28       28         pas      SCL-5V
+
+C1       1        1          pas      GND
+         2        2          pas      CLK-1
+
+C2       1        1          pas      GND
+         2        2          pas      CLK-2
+
+C3       +        +          pas      5V
+         -        -          pas      GND
+
+C4       1        1          pas      5V
+         2        2          pas      GND
+
+C5       1        1          pas      RST-2
+         2        2          pas      RST-1
+
+C14      +        +          pas      3V
+         -        -          pas      5V
+
+C15      1        1          pas      3V
+         2        2          pas      5V
+
+IR       1        S          pas      GND
+         2        S          pas      5V
+         3        S          pas      SDA-5V
+         4        S          pas      SCL-5V
+
+IR1      1        S          pas      OPTION11
+         2        S          pas      OPTION12
+         3        S          pas      OPTION13
+         4        S          pas      OPTION14
+
+LED1     A        A          pas      LEDNET-2
+         K        C          pas      GND
+
+OPTION   1        S          pas      OPTION1
+         2        S          pas      OPTION2
+         3        S          pas      OPTION3
+         4        S          pas      OPTION4
+         5        S          pas      OPTION5
+
+OPTION1  1        S          pas      OPTION6
+         2        S          pas      OPTION7
+         3        S          pas      OPTION8
+         4        S          pas      OPTION9
+         5        S          pas      OPTION10
+
+PGM      1        S          pas      RST-1
+         2        S          pas      TX-RX
+         3        S          pas      RX-TX
+         4        S          pas      GND
+         5        S          pas      5V
+
+POWER    1        S          pas      GND
+         2        S          pas      5V
+
+Q1       1        1          pas      CLK-1
+         2        2          pas      CLK-2
+
+R1       1        1          pas      LEDNET-1
+         2        2          pas      LEDNET-2
+
+R2       1        1          pas      RST-SW
+         2        2          pas      5V
+
+R3       1        1          pas      3V
+         2        2          pas      I2C-EN
+
+R4       1        1          pas      SCL
+         2        2          pas      3V
+
+R5       1        1          pas      SCL-5V
+         2        2          pas      5V
+
+R6       1        1          pas      SDA-5V
+         2        2          pas      5V
+
+R7       1        1          pas      SDA
+         2        2          pas      3V
+
+R16      1        1          pas      RST-1
+         2        2          pas      5V
+
+S1       1        S          pas      GND
+         2        S1         pas      GND
+         3        P          pas      RST-SW
+         4        P1         pas      RST-SW
+
+SERVO    1        S          pas      GND
+         2        S          pas      5V
+         3        S          pas      N$1
+
+T1       1        C          pas      SCL
+         2        B          pas      I2C-EN
+         3        E          pas      SCL-5V
+
+T2       1        C          pas      SCL-5V
+         2        B          pas      I2C-EN
+         3        E          pas      SCL
+
+T3       1        C          pas      SDA
+         2        B          pas      I2C-EN
+         3        E          pas      SDA-5V
+
+T4       1        C          pas      SDA-5V
+         2        B          pas      I2C-EN
+         3        E          pas      SDA
+
+UPCB     1        S          pas      SDA
+         2        S          pas      5V
+         3        S          pas      GND
+         4        S          pas      3V
+         5        S          pas      SCL
+
